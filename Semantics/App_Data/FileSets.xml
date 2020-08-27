@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sets>	
+	<set name="initial">
+		<url name="a">/WebResource.axd?d=_w65Lg0FVE-htJvl4_zmXw2&amp;amp;t=633403939286875000</url>
+		<url name="b">Widgets/FastFlickrWidget.js</url>
+		<url name="c">Widgets/FastRssWidget.js</url>
+		<url name="d">/ScriptResource.axd?d=WzuUYZ-Ggi7-B0tkhjPDTmMmgb5FPLmciWEXQLdjNjtbmek2jgmm3QETspZjKLvHue5em5kVYJGEuf4kofrcKNL9z6AiMhCe3SrJrcBel_c1&amp;amp;t=633454272919375000</url>
+		<url name="e">/ScriptResource.axd?d=WzuUYZ-Ggi7-B0tkhjPDTmMmgb5FPLmciWEXQLdjNjtbmek2jgmm3QETspZjKLvHIbaYWwsewvr_eclXZRGNKzWlaVj44lDEdg9CT2tyH-Yo9jFoQij_XIWxZNETQkZ90&amp;amp;t=633454272919375000</url>
+		<url name="f">Myframework.js</url>
+	</set>
+	<set name="post">
+		<!--
+		<url name="A">/Dropthings/ScriptResource.axd?d=WzuUYZ-Ggi7-B0tkhjPDTmMmgb5FPLmciWEXQLdjNjtbmek2jgmm3QETspZjKLvH-H5JQeA1OWzBaqnbKRQWwc2hxzZ5M8vtSrMhytbB-Oc1&amp;amp;t=633454272919375000</url>
+		<url name="B">/Dropthings/ScriptResource.axd?d=BXpG1T2rClCdn7QzWc-HrzQ2ECeqBhG6oiVakhRAkRY6YSaFJsnzqttheoUJJXE4jMUal_1CAxRvbSZ_4_ikAw2&amp;amp;t=633454540450468750</url>
+		-->
+		<url name="C">/ScriptResource.axd?d=BXpG1T2rClCdn7QzWc-HrzQ2ECeqBhG6oiVakhRAkRYRhsy_ZxsfsH4NaPtFtpdDEJ8oZaV5wKE16ikC-hinpw2&amp;amp;t=633454540450468750</url>
+		<url name="D">/ScriptResource.axd?d=BXpG1T2rClCdn7QzWc-HrzQ2ECeqBhG6oiVakhRAkRZbimFWogKpiYN4SVreNyf57osSvFc_f24oloxX4RTFfnfj5QsvJGQanl-pbbMbPf01&amp;amp;t=633454540450468750</url>
+		<url name="E">/ScriptResource.axd?d=BXpG1T2rClCdn7QzWc-HrzQ2ECeqBhG6oiVakhRAkRbafdamRlOhw1T_uHtOSMPJDWs9JcOUdDycBNJZqAZ4td3lKADiswhoMPhsW4l0bVs1&amp;amp;t=633454540450468750</url>
+		<url name="F">/ScriptResource.axd?d=BXpG1T2rClCdn7QzWc-HrzQ2ECeqBhG6oiVakhRAkRYghmjinTV5w99-2FmfitRJznZv4ie07NAlmC2GTA8NYyoum2GeJLSeEWYbV2RT9so1&amp;amp;t=633454540450468750</url>
+		<url name="G">/ScriptResource.axd?d=BXpG1T2rClCdn7QzWc-HrzQ2ECeqBhG6oiVakhRAkRZ0kPCx8eg-mOGNG_bL8daHedKGEFexwkbU7c6ynY9cIg2&amp;amp;t=633454540450468750</url>
+		<url name="H">/ScriptResource.axd?d=BXpG1T2rClCdn7QzWc-HrzQ2ECeqBhG6oiVakhRAkRZ0kPCx8eg-mOGNG_bL8daHihPw0BFgDn7tmC0u9VwcpEYJF2XlDhFrNv8LCa437GY1&amp;amp;t=633454540450468750</url>
+		<url name="I">/ScriptResource.axd?d=yH5HeHwPaXA8e2rLpOrSgrTKh71ikvSKAQlJuoXpILDG7hJpU-ZMx-Gbu2HF9jMHSxcekQL6gbghPmHlejMg8A2&amp;amp;t=633454552913750000</url>
+		<url name="J">/ScriptResource.axd?d=yH5HeHwPaXA8e2rLpOrSgrTKh71ikvSKAQlJuoXpILBy2Y4ozqvMDP1_npFYaXx_mcQevBN5xoItmiq7H41hdg2&amp;amp;t=633454552913750000</url>
+	</set>
+</sets>
+
+

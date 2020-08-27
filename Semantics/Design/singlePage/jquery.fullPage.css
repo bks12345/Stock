@@ -1,0 +1,4474 @@
+/**
+ * fullPage 2.6.6
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+
+}
+
+body { padding-top: 70px; }
+.doc-wrap { text-align: center; margin: 0 auto; padding: 2em 0 3em; }
+.doc-icon { display: inline-block; font-size: 0px; cursor: pointer; margin: 15px 30px; width: 90px; height: 90px; border-radius: 50%; text-align: center; position: relative; z-index: 1; color: #fff;}
+.doc-icon:before { font-family: 'FontAwesome'; speak: none; font-size: 48px; line-height: 90px; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; display: block; -webkit-font-smoothing: antialiased;}
+.doc-wrap-freshpolicy  
+{
+    background:#3fb8Af;
+    -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+}     
+.doc-wrap-endorsement  
+{
+    background:#A9C794;
+    -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+}     
+.doc-wrap-renewal  
+{
+    background:#93a9ae;
+    -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+}
+.doc-freshpolicy:before { content: "\f0f6";}
+.doc-endorsement:before { content: "\f03b";}
+.doc-renewal:before { content: "\f0e2";}
+@-webkit-keyframes spinAround {
+from { -webkit-transform: rotate(0deg)}
+to { -webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spinAround {
+from { -moz-transform: rotate(0deg)}
+to { -moz-transform: rotate(360deg);}
+}
+@keyframes spinAround {
+from { transform: rotate(0deg)}
+to { transform: rotate(360deg);}
+}
+  a:hover 
+{
+    text-decoration:none;
+}
+ .doc-effect .doc-icon { box-shadow: 0 0 0 4px rgba(255,255,255,1); -webkit-transition: background 0.2s, color 0.2s; -moz-transition: background 0.2s, color 0.2s; transition: background 0.2s, color 0.2s;}
+.doc-effect .doc-icon:hover { background: rgba(255,255,255,1); color: #64bb5d;}
+.doc-effect .doc-icon:hover:before { -webkit-animation: spinAround 2s linear infinite; -moz-animation: spinAround 2s linear infinite; animation: spinAround 2s linear infinite;}
+.document .document-items { display: block; padding: 30px; text-align: center; width: 100%; height:155px;}
+.document .document-items .document-span { display: block; height: 70px; margin-left: 40%; width: 70px; background-size:100%!important;}
+
+
+.breadcrumb{
+  position:fixed;
+  background-color: #e6e6e6;
+  width: 100%;
+  max-width : 1000px;
+  margin-top: 0px !important;
+}
+.offset{
+  margin-top: 50px;
+}
+h1, h2, h3, h4, h5, h6  
+{
+  margin: 0;color:#ffffff 
+  
+ }
+ .text-title 
+ {
+ color: rgba(0,0,0,0.6);
+text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+  }
+
+.section {
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+}
+.section-5 {
+  width: 100%;
+  height: 150vh;
+  background: #ffffff;
+}
+.section-4 {
+  width: 100%;
+  height: 70vh;
+  background: #ffffff;
+}
+.section-3 {
+  width: 100%;
+  height: 60vh;
+  background: #ffffff;
+}
+.section--blue { background: #3299bb; }
+
+.section--green { background: #d0d0d0;
+                   }
+
+.section--red { background: #97c2b9; }
+
+.section--blur { background: #97c2b9; }
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+
+  margin: 0 auto;
+  /* align center */
+  padding: 0 20px;
+}
+.icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 31px;
+  height: 17px;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.icon.icon--arrow:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 20px;
+  height: 5px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.icon.icon--arrow:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 6px;
+  width: 20px;
+  height: 5px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.icon.icon--arrow-up { top: 20px; }
+
+.icon.icon--arrow-up:before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.icon.icon--arrow-up:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.icon.icon--arrow-down { bottom: 20px; }
+
+.icon.icon--arrow-down:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.icon.icon--arrow-down:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.doc-content{
+  margin-top:100px;
+}
+/* Sweep To Right */
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #EDF1FF;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.fire-container
+{
+    background:#C8C8A9;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.fire-container:hover
+{
+  
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .fire-title {
+    
+ background-color:#C8C8A9;
+ border: 1px solid #C8C8A9;
+
+}
+.panel-default
+{
+    border:none !important;
+    }
+.fire-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .fire-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Document/Fire.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 260px;
+   
+   
+}
+.fire-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Document/Fire-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /*general Fire*/
+   .general-fire-container
+{
+    background:#f56954;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.general-fire-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .general-fire-title {
+    
+ background-color:#f56954;
+ border:1px solid #f56954;
+
+}
+.general-fire-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:14px;
+    font-weight:bold;
+ }
+ .general-fire-panel > a > span {
+   background-image: url('../../design/img1/icon_page/general-fire/General-Fire.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 190px;
+   
+   
+}
+.general-fire-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/general-fire/General-Fire-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* stock */
+   
+    .stock-container
+{
+    background:#3c8dbc;
+    height:190px;
+    opacity:0.99;
+      -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.stock-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .stock-title {
+    
+ background-color:#3c8dbc;
+ border:1px solid #3c8dbc;
+
+}
+.stock-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:14px;
+    font-weight:bold;
+ }
+ .stock-panel > a > span {
+   background-image: url('../../design/img1/icon_page/general-fire/stock.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 190px;
+   
+   
+}
+.stock-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/general-fire/stock-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+    /*industrial-fire */
+    .Industrial-fire-container
+{
+    background:#82AF6F;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.Industrial-fire-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .industrial-fire-title {
+    
+ background-color:#82AF6F;
+ border:1px solid #82AF6F;
+
+}
+.industrial-fire-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:14px;
+    font-weight:bold;
+ }
+ .industrial-fire-panel > a > span {
+   background-image: url('../../design/img1/icon_page/general-fire/industrial_risk.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.industrial-fire-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/general-fire/industrial_risk-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* commercial-fire */
+      .commercial-fire-container
+{
+    background:#9EAE8A;
+    height:190px;
+    opacity:0.99;
+    -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+     box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.commercial-fire-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .commercial-fire-title {
+    
+ background-color:#9EAE8A;
+ border:1px solid #9EAE8A;
+
+}
+.commercial-fire-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:14px;
+    font-weight:bold;
+ }
+ .commercial-fire-panel > a > span {
+   background-image: url('../../design/img1/icon_page/general-fire/commercial_risk.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.commercial-fire-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/general-fire/commercial_risk-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+    /*lop industrial commercial fire */
+ .lopcommercial-fire-container
+{
+    background:#605ca8;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.lopcommercial-fire-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .lopcommercial-fire-title {
+    
+ background-color:#605ca8;
+ border:1px solid #605ca8;
+
+}
+.lopcommercial-fire-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:14px;
+    font-weight:bold;
+ }
+ .lopcommercial-fire-panel > a > span {
+   background-image: url('../../design/img1/icon_page/general-fire/fire-consiquental-loss.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.lopcommercial-fire-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/general-fire/fire-consiquental-loss-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /*non-industrial */
+      .non-industrial-fire-container
+{
+    background:#b3280c;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.non-industrial-fire-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .non-industrial-fire-title {
+    
+ background-color:#b3280c;
+ border:1px solid #b3280c;
+
+}
+.non-industrial-fire-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .non-industrial-fire-panel > a > span {
+   background-image: url('../../design/img1/icon_page/general-fire/non-industrial and commercial.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.non-industrial-fire-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/general-fire/non-industrial and commercial-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+    /*fire content-traders */
+      .fire-content-traders-container
+{
+    background:#508f65;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.fire-content-traders-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .fire-content-traders-title {
+    
+ background-color:#508f65;
+ border:1px solid #508f65;
+
+}
+.fire-content-traders-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .fire-content-traders-panel > a > span {
+   background-image: url('../../design/img1/icon_page/general-fire/traders-comphrensive.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.fire-content-traders-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/general-fire/traders-comphrensive-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+    /*household */
+    .household-container
+{
+    background:#4099d5;
+    height:190px;
+    opacity:0.99;
+    -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.household-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .household-title {
+    
+ background-color:#4099d5;
+ border:1px solid #4099d5;
+
+}
+.household-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .household-panel > a > span {
+   background-image: url('../../design/img1/icon_page/general-fire/Household.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.household-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/general-fire/Household-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* burglary */
+      .burglary-container
+{
+    background:#596d82;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.burglary-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .burglary-title {
+    
+ background-color:#596d82;
+ border:1px solid #596d82;
+
+}
+.burglary-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .burglary-panel > a > span {
+   background-image: url('../../design/img1/icon_page/general-fire/Burglary.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.burglary-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/general-fire/Burglary-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+    /* banker */
+    .banker-container
+{
+    background:#2871b0;
+    height:190px;
+    opacity:0.99;
+    -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.banker-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .banker-title {
+    
+ background-color:#2871b0;
+ border:1px solid #2871b0;
+
+}
+.banker-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .banker-panel > a > span {
+   background-image: url('../../design/img1/icon_page/general-fire/banker.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.banker-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/general-fire/banker-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+    /* gharsansar */
+   .gharsansar-container
+{
+    background:#d81b60;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.gharsansar-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .gharsansar-title {
+    
+ background-color:#d81b60;
+ border:1px solid #d81b60;
+
+}
+.gharsansar-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .gharsansar-panel > a > span {
+   background-image: url('../../design/img1/icon_page/general-fire/Gharsansar.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.gharsansar-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/general-fire/Gharsansar-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* fire loss */
+    .fire-loss-container
+{
+    background:#39b7ac;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.fire-loss-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .fire-loss-title {
+    
+ background-color:#39b7ac;
+ border:1px solid #39b7ac;
+
+}
+.fire-loss-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .fire-loss-panel > a > span {
+   background-image: url('../../design/img1/icon_page/general-fire/fire-consiquental-loss.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.fire-loss-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/general-fire/fire-consiquental-loss-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+/* marine */
+.marine-container
+{
+    background:#00C0EF;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.marine-container:hover
+{
+   
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .marine-title {
+    
+ background-color:#00C0EF;
+border:1px solid #00C0EF;
+}
+.panel-default
+{
+    border:none !important;
+    }
+.marine-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .marine-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Document/marine.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 260px;
+   
+   
+}
+.marine-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Document/marine-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* overseas */
+   .overseas-container
+{
+    background:#39b7ac;
+    height:190px;
+    opacity:0.99;
+      -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.overseas-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .overseas-title {
+    
+ background-color:#39b7ac;
+ border:1px solid #39b7ac;
+
+}
+.overseas-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .overseas-panel > a > span {
+   background-image: url('../../design/img1/icon_page/marine/overseas-transit.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 350px;
+   
+   
+}
+.overseas-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/marine/overseas-transit-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+  
+   /* inland transit */
+      .inland-container
+{
+    background:#605ca8;
+    height:190px;
+    opacity:0.99;
+      -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.inland-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .inland-title {
+    
+ background-color:#605ca8;
+ border:1px solid #605ca8;
+
+}
+.inland-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .inland-panel > a > span {
+   background-image: url('../../design/img1/icon_page/marine/inland-trans.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 350px;
+   
+   
+}
+.inland-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/marine/inland-trans-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   
+   /* motor */
+   .motor-container
+{
+    background:#59C594;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.motor-container:hover
+{
+   
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .motor-title {
+    
+ background-color:#59C594;
+ border:1px solid #59C594;
+
+}
+.panel-default
+{
+    border:none !important;
+    }
+.motor-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .motor-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Document/motor.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 260px;
+   
+   
+}
+.motor-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Document/motor-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* motorcycle */
+ .motorcycle-container
+{
+    background:#009688;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.motorcycle-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .motorcycle-title {
+    
+ background-color:#009688;
+ border:1px solid #009688;
+
+}
+.motorcycle-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .motorcycle-panel > a > span {
+   background-image: url('../../design/img1/icon_page/motor/Motor-Cycle.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 260px;
+   
+   
+}
+.motorcycle-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/motor/Motor-Cycle-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* commercial Vehicle */
+      .commercial-vehicle-container
+{
+    background:#605ca8;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.commercial-vehicle-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .commercial-vehicle-title {
+    
+ background-color:#605ca8;
+ border:1px solid #605ca8;
+
+}
+.commercial-vehicle-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .commercial-vehicle-panel > a > span {
+   background-image: url('../../design/img1/icon_page/motor/commercial-vehicle.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 260px;
+   
+   
+}
+.commercial-vehicle-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/motor/commercial-vehicle-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* private vehicle */
+    .private-vehicle-container
+{
+    background:#e91e63;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.private-vehicle-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .private-vehicle-title {
+    
+ background-color:#e91e63;
+ border:1px solid #e91e63;
+
+}
+.private-vehicle-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .private-vehicle-panel > a > span {
+   background-image: url('../../design/img1/icon_page/motor/private.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 260px;
+   
+   
+}
+.private-vehicle-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/motor/private-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* Misc PAge */
+    .misc-container
+{
+    background:#E98A7E;
+    height:190px;
+   -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+}
+.misc-container:hover
+{
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.panel-default > .misc-title
+{
+    
+ background-color:#E98A7E;
+ border: 1px solid #E98A7E;
+
+
+}
+.misc-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+
+ .misc-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Document/Miscallenious.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width:260px;
+   
+}
+.misc-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Document/Miscallenious-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+/* Cash In Transit */
+.CIT-container
+{
+    background:#08abf4;
+    height:190px;
+    opacity:0.99;
+
+}
+.CIT-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .CIT-title {
+    
+ background-color:#08abf4;
+ border:1px solid #08abf4;
+
+
+}
+.CIT-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .CIT-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/cash-in-transit.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.CIT-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/cash-in-transit-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* Personal Accident */
+    .PA-container
+{
+    background:#Acd386;
+    height:190px;
+    opaPAy:0.99;
+    -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.PA-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opaPAy;
+  transition-property: transform, opaPAy;
+   
+}
+.panel-default > .PA-title {
+    
+ background-color:#Acd386;
+ border:1px solid #Acd386;
+
+
+}
+.PA-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .PA-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/personnel-accident.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.PA-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/personnel-accident-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* Group Personal Accident */
+    .GPA-container
+{
+    background:#f56954;
+    height:190px;
+    opacity:0.99;
+    -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.GPA-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .GPA-title {
+    
+ background-color:#f56954;
+ border:1px solid #f56954;
+
+}
+.GPA-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .GPA-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/Group_PA.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.GPA-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/Group_PA-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* BAnkers Blanket */
+     .BB-container
+{
+    background:#2871b0;
+    height:190px;
+    opacity:0.99;
+    -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.BB-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .BB-title {
+    
+ background-color:#2871b0;
+ border:1px solid #2871b0;
+-webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+}
+.BB-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .BB-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/bankers_blanket.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.BB-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/bankers_blanket-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* Travel Medical */
+    .travel-medical-container
+{
+    background:#9C27B0;
+    height:190px;
+    opacity:0.99;
+    -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.travel-medical-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .travel-medical-title {
+    
+ background-color:#9C27B0;
+ border:1px solid #9C27B0;
+-webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+}
+.travel-medical-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .travel-medical-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/Travel-Medica.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.travel-medical-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/Travel-Medica-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* Group Domiciliary Hospitalization Mediclaim */
+    .GDHM-container
+{
+    background:#605ca8;
+    height:190px;
+    opacity:0.99;
+    -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.GDHM-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .GDHM-title {
+    
+ background-color:#605ca8;
+ border:1px solid #605ca8;
+
+}
+.GDHM-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .GDHM-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/Group_domi_hospitalization.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.GDHM-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/Group_domi_hospitalization-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* Gold */
+     .gold-container
+{
+    background:#f7d80f;
+    height:190px;
+    opacity:0.99;
+    -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.gold-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .gold-title {
+    
+ background-color:#f7d80f;
+ border:1px solid #f7d80f;
+
+}
+.gold-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .gold-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/Gold.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.gold-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/Gold-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* professional indemnity */
+   .PI-container
+{
+    background:#009688;
+    height:190px;
+    opacity:0.99;
+      -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.PI-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .PI-title {
+    
+ background-color:#009688;
+ border:1px solid #009688;
+
+}
+.PI-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .PI-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/professional_indemnity.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.PI-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/professional_indemnity-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* trekking */
+    .trekking-container
+{
+    background:#795548;
+    height:190px;
+    opacity:0.99;
+      -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.trekking-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .trekking-title {
+    
+ background-color:#795548;
+ border:1px solid #795548;
+
+}
+.trekking-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .trekking-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/Trekking.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.trekking-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/Trekking-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* press Accident */
+    .press-accident-container
+{
+    background:#4099d5;
+    height:190px;
+    opacity:0.99;
+      -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.press-accident-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .press-accident-title {
+    
+ background-color:#4099d5;
+ border:1px solid #4099d5;
+
+}
+.press-accident-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .press-accident-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/Press-Accident.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.press-accident-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/Press-Accident-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* public liability */
+     .public-liability-container
+{
+    background:#d81b60;
+    height:190px;
+    opacity:0.99;
+      -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.public-liability-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .public-liability-title {
+    
+ background-color:#d81b60;
+ border:1px solid #d81b60;
+
+}
+.public-liability-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .public-liability-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/Public_liabilit.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.public-liability-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/Public_liabilit-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+
+/* burglary */
+ .burglary-misc-container
+{
+    background:#596d82;
+    height:190px;
+    opacity:0.99;
+      -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.burglary-misc-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .burglary-misc-title {
+    
+ background-color:#596d82;
+ border:1px solid #596d82;
+
+
+}
+.burglary-misc-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .burglary-misc-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/burglary-1.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.burglary-misc-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/burglary-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* baggage */
+    .baggage-container
+{
+    background:#605ca8;
+    height:190px;
+    opacity:0.99;
+      -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.baggage-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .baggage-title {
+    
+ background-color:#605ca8;
+ border:1px solid #605ca8;
+ 
+
+}
+.baggage-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .baggage-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/Baggage-Insurance.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.baggage-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/Baggage-Insurance-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* fedelity Guarantee */
+    .fedility-container
+{
+    background:#508f65;
+    height:190px;
+    opacity:0.99;
+      -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.fedility-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .fedility-title {
+    
+ background-color:#508f65;
+ border:1px solid #508f65;
+ 
+
+}
+.fedility-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .fedility-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/Fedility-Gurantee.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.fedility-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/Fedelity-Gurantee- 2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* Cover Note */
+     .Covernote-container
+{
+    background:#2871b0;
+    height:190px;
+    opacity:0.99;
+      -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.Covernote-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .Covernote-title {
+    
+ background-color:#2871b0;
+ border:1px solid #2871b0;
+ 
+}
+.Covernote-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .Covernote-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/covernote.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.Covernote-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/covernote-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* All Risk*/
+    .allrisk-container
+{
+    background:#b3280c;
+    height:190px;
+    opacity:0.99;
+      -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.allrisk-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .allrisk-title {
+    
+ background-color:#b3280c;
+ border:1px solid #b3280c;
+ }
+.allrisk-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .allrisk-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/All-risk.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.allrisk-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/All-risk-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* strong room burglary */
+     .strongroom-container
+{
+    background:#508f65;
+    height:190px;
+    opacity:0.99;
+      -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.strongroom-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .strongroom-title {
+    
+ background-color:#508f65;
+ border:1px solid #508f65;
+
+}
+.strongroom-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .strongroom-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/strong-rom.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.strongroom-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/strong-rom-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* pedal cycle */
+   .pedalcycle-container
+{
+    background:#f56954;
+    height:190px;
+    opacity:0.99;
+      -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.pedalcycle-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .pedalcycle-title {
+    
+ background-color:#f56954;
+ border:1px solid #f56954;
+ 
+}
+.pedalcycle-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .pedalcycle-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/pedal-cycl.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.pedalcycle-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/pedal-cycl-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* directors officers liability */
+    .DOL-container
+{
+    background:#4caf50;
+    height:190px;
+    opacity:0.99;
+      -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.DOL-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .DOL-title {
+    
+ background-color:#4caf50;
+ border:1px solid #4caf50;
+}
+.DOL-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .DOL-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/officer-liability.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.DOL-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/officer-liability-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* Cash in transit other */
+     .CITO-container
+{
+    background:#03a9f0;
+    height:190px;
+    opacity:0.99;
+      -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.CITO-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .CITO-title {
+    
+ background-color:#03a9f0;
+ border:1px solid #03a9f0;
+ }
+.CITO-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .CITO-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/cash-in-transit.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.CITO-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/cash-in-transit-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* product liability */
+     .productl-container
+{
+    background:#39b7ac;
+    height:190px;
+    opacity:0.99;
+      -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.productl-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .productl-title {
+    
+ background-color:#39b7ac;
+ border:1px solid #39b7ac;
+}
+.productl-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .productl-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/product-liability.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.productl-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/product-liability-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* Money */
+     .money-container
+{
+    background:#ff4d00;
+    height:190px;
+    opacity:0.99;
+      -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.money-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .money-title {
+    
+ background-color:#ff4d00;
+ border:1px solid #ff4d00;
+ }
+.money-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .money-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/Money.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.money-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/Money-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+
+/*working Compensation */
+  .working-compensation-container
+{
+    background:#692333;
+    height:190px;
+    opacity:0.99;
+
+}
+.working-compensation-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .working-compensation-title {
+    
+ background-color:#692333;
+ border:1px solid #692333;
+}
+.working-compensation-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .working-compensation-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/working-compensation.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.working-compensation-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/working-compensation-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* household Insurance */
+     .householdinsurance-container
+{
+    background:#f56954;
+    height:190px;
+    opacity:0.99;
+
+}
+.householdinsurance-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .householdinsurance-title {
+    
+ background-color:#f56954;
+ border:1px solid #f56954;
+
+
+}
+.householdinsurance-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .householdinsurance-panel > a > span {
+   background-image: url('../../design/img1/icon_page/misc/Household.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.householdinsurance-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/misc/Household-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+/*engineering */
+ .engineering-container
+{
+     background:#3fb8af;
+    height:190px;
+    -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.engineering-container:hover
+{
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.panel-default > .engineering-title
+{
+    
+ background:#3fb8af;
+  border:1px solid #3fb8af;
+
+
+}
+.engineering-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+
+ .engineering-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Document/Engineering.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 260px;
+   
+}
+.engineering-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Document/Engineering-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+/* contractor's all risk */
+  .CTR-container
+{
+    background:#692333;
+    height:190px;
+    opacity:0.99;
+         -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.CTR-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .CTR-title {
+    
+ background-color:#692333;
+ border:1px solid #692333;
+
+}
+.CTR-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .CTR-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Engineering/contractor-all-risk.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.CTR-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Engineering/contractor-all-risk-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* erection all risk */
+     .EAR-container
+{
+    background:#795548;
+    height:190px;
+    opacity:0.99;
+         -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.EAR-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .EAR-title {
+    
+ background-color:#795548;
+ border:1px solid #795548;
+
+}
+.EAR-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .EAR-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Engineering/erection-all-risk.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.EAR-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Engineering/erection-all-risk-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* marine cum erection */
+   .MCE-container
+{
+    background:#607b8d;
+    height:190px;
+    opacity:0.99;
+         -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.MCE-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .MCE-title {
+    
+ background-color:#607d8b;
+ border:1px solid #607d8b;
+
+}
+.MCE-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .MCE-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Engineering/marinecum-erection.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.MCE-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Engineering/marinecum-erection-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* boiler and pressure plant */
+   .BPP-container
+{
+    background:#3f51b5;
+    height:190px;
+    opacity:0.99;
+         -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.BPP-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .BPP-title {
+    
+ background-color:#3f51b5;
+ border:1px solid #3f51b5;
+
+}
+.BPP-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .BPP-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Engineering/boilerandpressure.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.BPP-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Engineering/boilerandpressure-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /*Contractor's plant mechinary */
+     .CPM-container
+{
+    background:#f56954;
+    height:190px;
+    opacity:0.99;
+         -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.CPM-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .CPM-title {
+    
+ background-color:#f56954;
+ border:1px solid #f56954;
+
+}
+.CPM-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .CPM-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Engineering/contractor-plant-and-mechinary.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.CPM-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Engineering/contractor-plant-and-mechinary-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* electronic equipment insurance */.EEI-container
+{
+    background:#009688;
+    height:190px;
+    opacity:0.99;
+         -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.EEI-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .EEI-title {
+    
+ background-color:#009688;
+ border:1px solid #009688;
+
+}
+.EEI-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .EEI-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Engineering/electronicei.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.EEI-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Engineering/electronicei-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* Mechinary Breakdown  Insurance */
+   .MBI-container
+{
+    background:#FF9800;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.MBI-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .MBI-title {
+    
+ background-color:#FF9800;
+ border:1px solid #FF9800;
+
+}
+.MBI-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .MBI-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Engineering/mechinary-breakdown.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.MBI-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Engineering/mechinary-breakdown-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* consiquental loss */
+     .CL-container
+{
+    background:#d81b60;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.CL-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .CL-title {
+    
+ background-color:#d81b60;
+ border:1px solid #d81b60;
+
+}
+.CL-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .CL-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Engineering/consiquental-loss.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.CL-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Engineering/consiquental-loss-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+/* aviation */
+  .aviation-container
+{
+    background:#39CCCC;
+    height:190px;
+   -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+}
+.aviation-container:hover
+{
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.panel-default > .aviation-title
+{
+    
+ background-color:#39CCCC;
+ border:1px solid #39CCCC;
+ 
+
+}
+.aviation-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+
+ .aviation-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Document/Aviation.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 260px;
+   
+}
+.aviation-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Document/Aviation-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+/* loss of license */
+ .LOL-container
+{
+    background:#2196f3;
+    height:190px;
+    opacity:0.99;
+    -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.LOL-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .LOL-title {
+    
+ background-color:#2196f3;
+ border:1px solid #2196f3;
+
+}
+.LOL-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .LOL-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Aviation/loss-of-license.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 350px;
+   
+   
+}
+.LOL-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Aviation/loss-of-license-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* Aviation */
+   .aviation-2-container
+{
+    background:#9c27b0;
+    height:190px;
+    opacity:0.99;
+
+}
+.aviation-2-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .aviation-2-title {
+    
+ background-color:#9c27b0;
+ border:1px solid #9c27b0;
+ -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.aviation-2-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .aviation-2-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Aviation/aviation.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 350px;
+   
+   
+}
+.aviation-2-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Aviation/aviation-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+/*micro*/
+  .micro-container
+{
+    background:#E56B97;
+    height:190px;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.micro-container:hover
+{
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.panel-default > .micro-title
+{
+    
+ background-color:#E56B97;
+ border:1px solid #E56B97;
+ 
+
+}
+.micro-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+
+ .micro-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Document/micro-cow1.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 260px;
+   
+}
+.micro-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Document/micro-cow.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+/*fruit */
+  .fruit-container
+{
+    background:#e91e63;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.fruit-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .fruit-title {
+    
+ background-color:#e91e63;
+ border:1px solid #e91e63;
+
+}
+.fruit-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .fruit-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Micro/fruit.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.fruit-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Micro/fruit-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* tarkari bari */
+   .tarkari-container
+{
+    background:#508f65;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.tarkari-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .tarkari-title {
+    
+ background-color:#508f65;
+ border:1px solid #508f65;
+
+}
+.tarkari-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .tarkari-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Micro/tarkari-bari.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.tarkari-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Micro/tarkari-bari-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   
+   /*Potato */
+   .potato-container
+{
+    background:#977d76;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.potato-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .potato-title {
+    
+ background-color:#977d76;
+ border:1px solid #977d76;
+
+}
+.potato-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .potato-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Micro/potato.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.potato-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Micro/potato-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* crop */
+    .crop-container
+{
+    background:#4caf50;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.crop-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .crop-title {
+    
+ background-color:#4caf50;
+ border:1px solid #4caf50;
+
+}
+.crop-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .crop-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Micro/crop.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.crop-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Micro/crop-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* cattle */
+     .cattle-container
+{
+    background:#f56954;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.cattle-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .cattle-title {
+    
+ background-color:#f56954;
+ border:1px solid #f56954;
+
+}
+.cattle-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .cattle-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Micro/cattle.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.cattle-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/micro/cattle-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* birds */
+     .birds-container
+{
+    background:#d49f0f;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.birds-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .birds-title {
+    
+ background-color:#d49f0f;
+ border:1px solid #d49f0f;
+
+}
+.birds-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .birds-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Micro/birds.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.birds-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/micro/birds-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* fish */
+     .fish-container
+{
+    background:#A19B4A;
+    height:190px;
+    opacity:0.99;
+     -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.fish-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .fish-title {
+    
+ background-color:#A19B4A;
+ border:1px solid #A19B4A;
+
+}
+.fish-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .fish-panel > a > span {
+   background-image: url('../../design/img1/icon_page/Micro/fish.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 180px;
+   
+   
+}
+.fish-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/Micro/fish-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* extra endorsement */
+    .extra-container
+{
+    background:#03A9F4;
+    height:190px;
+    opacity:0.99;
+    -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.extra-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .extra-title {
+    
+ background-color:#03A9F4;
+ border:1px solid #03A9F4;
+
+}
+.extra-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .extra-panel > a > span {
+   background-image: url('../../design/img1/icon_page/EndorseType/extra.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 250px;
+   
+   
+}
+.extra-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/EndorseType/extra-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* name transfer */
+    .name-transfer-container
+{
+    background:#8D81FF;
+    height:190px;
+    opacity:0.99;
+    -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.name-transfer-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .name-transfer-title {
+    
+ background-color:#8D81FF;
+ border:1px solid #8D81FF;
+
+}
+.name-transfer-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .name-transfer-panel > a > span {
+   background-image: url('../../design/img1/icon_page/EndorseType/name-transfer.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 250px;
+   
+   
+}
+.name-transfer-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/EndorseType/name-transfer-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* cancellation */
+   .cancellation-container
+{
+    background:#802620;
+    height:190px;
+    opacity:0.99;
+    -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.cancellation-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .cancellation-title {
+    
+ background-color:#802620;
+ border:1px solid #802620;
+
+}
+.cancellation-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .cancellation-panel > a > span {
+   background-image: url('../../design/img1/icon_page/EndorseType/cancellation.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 250px;
+   
+   
+}
+.cancellation-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/EndorseType/cancellation-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* Nill */
+    .nill-container
+{
+    background:#607D8B;
+    height:190px;
+    opacity:0.99;
+    -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.nill-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .nill-title {
+    
+ background-color:#607D8B;
+ border:1px solid #607D8B;
+
+}
+.nill-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .nill-panel > a > span {
+   background-image: url('../../design/img1/icon_page/EndorseType/nill.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 250px;
+   
+   
+}
+.nill-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/EndorseType/nill-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+   /* refund */
+    .refund-container
+{
+    background:#009688;
+    height:190px;
+    opacity:0.99;
+    -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+    box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+
+}
+.refund-container:hover
+{
+   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+   
+}
+.panel-default > .refund-title {
+    
+ background-color:#009688;
+ border:1px solid #009688;
+
+}
+.refund-title > a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+ }
+ .refund-panel > a > span {
+   background-image: url('../../design/img1/icon_page/EndorseType/refund.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 60px 60px;
+   display:block;
+   height: 100px;
+   width: 250px;
+   
+   
+}
+.refund-panel > a > span:hover
+{
+  
+     background-image: url('../../design/img1/icon_page/EndorseType/refund-2.png');
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;  
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+   }
+    /* modal window */
+   @media screen and (min-width: 768px) {
+    .modal-dialog {
+        left:auto;
+        right: auto;
+        top:50%;
+        width: 624px;
+    }
+}
+.breadcrumb
+{
+ background:#2871B0;
+ -webkit-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+ -moz-box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);
+ box-shadow: 3px 14px 13px -15px rgba(0,0,0,0.39);}
+.breadcrumb > li + li:before 
+{
+     font-family:FontAwesome;
+     content: "\f0a9";
+     font-weight:bold;
+     color:#fff;
+     font-size:large;
+}
+.breadcrumb > li > a
+{
+    color:#fff;
+    font-weight:bold;
+    font-size:large;
+    }
+.navbar-default
+{
+    background:none;
+    border:none;
+}

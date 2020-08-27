@@ -1,0 +1,278 @@
+﻿       
+        body
+        {
+            font-size: 12px !important;
+        }
+        
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix:after
+        {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+        .clearfix
+        {
+            display: inline-block;
+        }
+        /* start commented backslash hack \*/
+        * html .clearfix
+        {
+            height: 1%;
+        }
+        .clearfix
+        {
+            display: block;
+        }
+        /* close commented backslash hack */
+        
+        .header
+        {
+            width: 100%;
+            border: 1px solid #000;
+            border-bottom: none;
+            padding: 2px 5px 2px 5px;
+        }
+        .clear
+        {
+            clear: both;
+        }
+        @media print
+        {
+            .frontcover
+            {
+                min-height: 1000px;
+            }
+        }
+        @media print
+        {
+            .frontcoverTwo
+            {
+                margin-top: 30px;
+                min-height: 1000px;
+            }
+        }
+        @media print
+        {
+            .frontcoverThree
+            {
+                margin-top: 80px;
+                min-height: 1000px;
+            }
+        }
+        @media print
+        {
+            thead
+            {
+                display: table-header-group;
+            }
+        }
+        .col-md-5
+        {
+            width: 40.1% !important;
+        }
+        p
+        {
+            font-weight: normal !important;
+            font-size: 11px;
+            margin: 2px 5px -2px 3px;
+            display: inline-block;
+        }
+        
+        span
+        {
+            font-weight: normal !important;
+            font-size: 12px;
+            display: inline-block;
+            margin: 2px 5px 0 5px;
+        }
+        .control-label
+        {
+            font-weight: normal !important;
+            font-size: 12px;
+            display: inline-block;
+            margin: 2px 5px 0 5px;
+        }
+        .large
+        {
+            font-size: 12px;
+            font-weight: bold;
+        }
+        h3
+        {
+            font-size: large;
+            margin: 5px 0 0 0;
+        }
+        .eng
+        {
+            font-family: Tahoma,Verdana,Segoe,sans-serif;
+            font-weight: bold;
+        }
+        .eng2
+        {
+            font-family: Tahoma,Verdana,Segoe,sans-serif;
+        }
+        .nepali_font
+        {
+            font-family: 'fontasy1';
+            font-size: 12px !important;
+        }
+        .nepali_font2
+        {
+            font-family: mercan1;
+            font-size: 12px !important;
+        }
+        page[size="A4"]
+        {
+            width: 21cm;
+            height: 29.7cm;
+        }
+        .border
+        {
+            border: 1px solid #000;
+        }
+        .title1
+        {
+            border: 1px solid #000;
+            border-right: none;
+            font-size: 14px;
+            font-weight: normal !important;
+        }
+        .title2
+        {
+            border: 1px solid #000;
+            border-left: none;
+            font-size: 10px;
+            font-weight: normal !important;
+        }
+        .SubTitle > tbody:first-child > tr:first-child > th
+        {
+            border: none !important;
+        }
+        
+        .contents.table
+        {
+            border-top: none !important;
+        }
+        .table
+        {
+            margin: 0px !important;
+        }
+        .table-bordered
+        {
+            border: 1px solid #000;
+        }
+        .table-bordered > tbody > tr > th, .table-bordered > tbody > tr > td
+        {
+            border: 1px solid #000 !important;
+            border-bottom-width: 1px !important;
+        }
+        .table > tbody > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > tbody > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td
+        {
+            padding: 2px !important;
+        }
+        .table-bordered > tbody > tr > td
+        {
+            border: 1px solid #000;
+        }
+        .table > tbody + tbody
+        {
+            border-top: 1px solid #000;
+        }
+        .aspTable > tbody > tr > td
+        {
+            border-bottom: 1px solid #000;
+            border-right: 1px solid #000;
+        }
+        .title > tbody:first-child > tr:first-child > th
+        {
+            border: none !important;
+        }
+        .footer > tbody:first-child > tr:first-child > th
+        {
+            border: none !important;
+        }
+        .companyLogo
+        {
+            padding: 5px;
+        }
+        #logo
+        {
+            width: 20%;
+            float: left;
+        }
+        #companyDetails
+        {
+            width: 75%;
+            float: left;
+        }
+        .companyName
+        {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .header p
+        {
+            display: block;
+        }
+        .detail2
+        {
+            border: 1px solid #000;
+            border-bottom: 1px solid #fff;
+            border-top: none !important;
+            padding: 0 !important;
+        }
+        .detail3
+        {
+            border: 1px solid #000;
+            padding: 0 !important;
+        }
+        .contents
+        {
+            padding: 0 0 0 0 !important;
+            border-right: 1px solid #000;
+        }
+        .contents2
+        {
+            padding: 0 0 0 0 !important;
+        }
+        .lbl
+        {
+            width: 20% !important;
+        }
+        .footerContentWrap
+        {
+            padding: 0 0 0 0 !important;
+            width: 100% !important;
+            font-size: 11px !important;
+        }
+        .footerContent
+        {
+            border-top: 1px solid #000 !important;
+        }
+        .certificate-table > tbody > tr > th
+        {
+            border: none !important;
+        }
+        .certificateTwo-table > tbody > tr > th
+        {
+            border: none !important;
+            border-right: 1px solid #000 !important;
+        }
+        .certificateTwo-table > tbody > tr > th:nth-child(5)
+        {
+            border: none !important;
+        }
+        .certificateTwo-table > tbody > tr:first-child > th
+        {
+            border-bottom: 1px solid #000 !important;
+        }
+        
+      

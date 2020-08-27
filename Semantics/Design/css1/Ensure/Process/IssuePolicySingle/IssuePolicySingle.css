@@ -1,0 +1,194 @@
+﻿             
+        .seperate {
+  border-bottom: 1px solid #f00;
+  padding-bottom: 75px;
+  margin-bottom: 50px;
+}
+        .btn-cancel, .btn-back, .btn-next, .btn-finish, .btn-print
+        {
+            width: 27px;
+            height: 29px;
+            margin-left: 5px;
+            background-size: 80% !important;
+        }
+        .btn-cancel:hover, .btn-back:hover, .btn-next:hover, .btn-finish:hover, .btn-print:hover, .btn-cancel:disabled, .btn-back:disabled, .btn-next:disabled, .btn-finish:disabled, .btn-print:disabled
+        {
+            background-color: transparent !important;
+            border-color:rgba(0,0,0,0.5)!important;
+        }
+        .btn-cancel
+        {
+            background: url('/Design/img1/close-issue-2.png') center no-repeat;
+        }
+        .btn-back
+        {
+            background: url('/Design/img1/arrow-issue-3.png') center no-repeat;
+        }
+        .btn-next
+        {
+            background: url('/Design/img1/arrow-issue-1.png') center no-repeat;
+        }
+        .btn-finish
+        {
+            background: url('/Design/img1/save-issue-1.png') center no-repeat;
+        }
+        .btn-print
+        {
+            background: url('/Design/img1/print-issue-1.png') center no-repeat;
+        }
+        
+
+        /*wiz a inline starts */
+        
+           .wiza-check > label {
+  margin-left: 5px;
+}
+        /* grow In */
+        .hvr-grow
+        {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+        }
+        .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active
+        {
+            -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+        }
+        .page-header
+        {
+            margin: 0 !important;
+            padding: 0 !important;
+            border-color: #428BCA !important;
+        }
+        .top-btn
+        {
+            margin-top: 4px;
+        }
+        .top-btn1 > button
+        {
+            background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+            color: #428bca !important;
+            font-weight: bold !important;
+            text-decoration: underline !important;
+            border: none !important;
+        }
+        .top-btn1 > button:hover
+        {
+            text-decoration: none !important;}
+    
+        .fixed-footer
+        {
+            height: 45px !important;
+            min-height: 0 !important;
+        }
+        .page-header-container
+        {
+            margin-top: 10px;
+        }
+        .wiz-page-header
+        {
+            margin-top: 0;
+            margin-bottom:15px!important;
+        }
+        legend
+        {
+            margin-bottom: 5px !important;
+        }
+        .fixed-footer div, .footer-fix div
+        {
+            display: block;
+        }
+        .ins-bank-check > label
+        {
+            margin-top: 3px;
+            font-weight: normal !important;
+        }
+        .porposal-mar
+        {
+            padding-top: 10px !important;
+            margin-bottom: 0 !important;
+        }
+        .policy-border { border-bottom: 1px solid #eeeeee; margin-bottom:10px;}
+        #PolicyModal #myModalLabel
+        {
+            text-align: left !important;
+        }
+.time-div{ margin-left: -15px!important;
+    margin-right: -15px!important;}
+.hour, .minute, .ampm {
+  float: left;
+  width: 30%!important;
+}
+        @media (max-width: 800px)
+        {
+            .margintop
+            {
+                margin-top: 5px !important;
+            }
+        }
+        @media (max-width: 768px)
+        {
+            .fixed-footer
+            {
+                height: auto !important;
+            }
+        }
+        
+        
+        /*wiz a inline end */
+        
+        /*wiz c inline starts */
+          .nepali_font {font-family: 'fontasy1';}
+          .for_position{position:relative;}
+.for_position > span {position:absolute; right:0; top:3px;}
+        /*wiz c inline end */
+        
+        /*wiz d inline starts */
+          @media (max-width: 800px)
+        {
+           #IframeEdit
+           {
+               width:100%!important;}
+          #kyc-modal {
+               width:515px!important;}
+        }
+         /* from riskbreakup page */ 
+.dataTables_scrollBody {height:30vh!important;}
+.dataTables_scrollBody1 {width: 103% !important;}
+.top-btn {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+  border: medium none !important;
+  color: #428bca !important;
+  font-weight: bold !important;
+  text-decoration: underline !important;
+}
+        /*wiz d inline end */
+        
+        
+        /*wiz e inline starts */
+        
+.ajax__HtmlEditor_editor_container { height: 100% !important; width: 100% !important;}
+#ContentPlaceHolder1_txtDescription_ctl02 > iframe,
+#ContentPlaceHoldr1_txtWarranty_ctl02 > iframe { height: 75px !important;}
+
+
+        /*wiz e inline end */
+     
+        /*wiz g inline starts */   
+         .acc-important {
+  border: 1px solid #f00 !important;
+  padding: 10px;
+  background:rgba(255,0,0,0.6)!important;
+}
+
+        /*wiz g inline ends */   

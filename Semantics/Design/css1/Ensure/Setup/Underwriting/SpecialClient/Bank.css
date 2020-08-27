@@ -1,0 +1,8 @@
+﻿.fixed-container {height: 88% !important;}
+.label-number {margin-right: 0!important;}
+/*.dataTables_scrollBody { height: 64vh !important;}
+.dataTables_scrollBody1 { width: 102% !important;}*/
+.table-design {
+  height: 64vh !important;
+}
+@media (max-width: 800px) { #IframeEdit { width:500px !important; } #bank-content { width:520px !important; }  }

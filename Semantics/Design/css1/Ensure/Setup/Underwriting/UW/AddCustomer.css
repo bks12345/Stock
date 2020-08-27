@@ -1,0 +1,15 @@
+﻿
+.selected { color: Red;}
+.black_overlayThis { display: none; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index: 1001; -moz-opacity: 0.8; opacity: .80; filter: alpha(opacity=80); }
+.white_contentThis { width: 270px; border: 2px solid #BFCDDB; background-color: white; z-index: 1002; overflow: auto; border-radius: 5px; position: absolute !important; }
+#lightKyc .popupClose { color: black; float: right; font-size: 12px; font-weight: bold; margin-right: 5px; margin-top: 3px; width: 37px;}
+iframe { height: 100%; width: 100%; -moz-transition: 2s; }
+.PopupHeaderThis { height: 25px; background-color: #CCDAE7; width: 100%;}
+p { font-family: Arial; font-size: 24px; margin-left: 30px; position: absolute; margin-top: 5px; color: White;}
+.dataTables_scrollBody { height: 20vh !important;  }
+.datatables_scrollBody1 { width: 101% !important; }
+.top-position { top: 15px;}
+.input-group-addon { padding: 0!important;}
+@media (max-width: 800px) { .margintop { margin-top: 5px !important; } }
+.modal-popup { border: none; background: none; }
+.addcustomer-checkbox { width: 100%; height: 100px; overflow-y: auto; border: 1px solid #cccccc;}

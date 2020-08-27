@@ -1,0 +1,109 @@
+/*-----
+Theme : Ensure UI
+Developed By: Nirmal khadka, Sunil Duwal
+Css Developed : Nirmal Khadka, Sunil Duwal
+                
+------*/
+ .table > caption + thead > tr:first-child > th, 
+ .table > colgroup + thead > tr:first-child > th, 
+ .table > thead:first-child > tr:first-child > th, 
+ .table > caption + thead > tr:first-child > td, 
+ .table > colgroup + thead > tr:first-child > td, 
+ .table > thead:first-child > tr:first-child > td
+ {
+     vertical-align:top;
+     text-align:center;
+     font-size:14px;
+     }
+ .table > thead > tr > th, 
+ .table > tbody > tr > th, 
+ .table > tfoot > tr > th, 
+ .table > thead > tr > td, 
+ .table > tbody > tr > td, 
+ .table > tfoot > tr > td
+ {
+     padding:8px 5px;
+     max-width: 120px;
+   /* min-width: 120px; - sunil comment*/
+   min-width:auto;
+    word-break: break-all;
+    cursor:pointer;
+     }
+  .table tr > th{font-weight:100;}
+  table tr.selected{color:#e992b9;z-index:1024;}
+  
+ .form-horizontal .radio, .form-horizontal .checkbox, .form-horizontal .radio-inline, .form-horizontal .checkbox-inline{padding-top:0;} 
+  
+  /* For appearance */
+
+/*comment by kishan*/
+/*td, th {
+    padding: 0.75em 1.5em;
+}*/
+	td.err {
+		background-color: #e992b9;
+		color: #fff;
+		font-size: 0.75em;
+		text-align: center;
+		line-height: 1;
+	}
+th {
+    font-weight: 100;
+}
+tbody th {
+}
+tbody tr:nth-child(2n-1) {
+    transition: all .05s ease-in-out;
+}
+tbody tr:hover {
+}
+.list-group-item{margin-top:2px;}
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{margin-top:2px;}
+
+/* For appearance */
+.sticky-wrap {
+	overflow-x: auto;
+	overflow-y: hidden;
+	position: relative;
+	width: 100%;
+}
+.sticky-wrap .sticky-thead,
+.sticky-wrap .sticky-col,
+.sticky-wrap .sticky-intersect {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all .05s ease-in-out;
+	z-index: 50;
+	width: auto; /* Prevent table from stretching to full size */
+	background:#428BCA;
+	color:#fff;
+}
+	.sticky-wrap .sticky-thead {
+		z-index: 100;
+		width: 100%; /* Force stretch */
+	}
+	.sticky-wrap .sticky-intersect {
+		opacity: 0;
+		z-index: 150;
+		height:58px;
+
+	}
+	.sticky-enabled thead tr th {
+    background: none repeat scroll 0 0 #428BCA;
+    color:#fff;
+}
+.sticky-wrap td,
+.sticky-wrap th {
+	box-sizing: border-box;
+}
+
+/* Not needed for sticky header/column functionality */
+.sticky-wrap.overflow-y {
+	overflow-y: auto;
+	/* comment -sunil
+	height:72vh;
+	height:83vh;*/
+	
+}

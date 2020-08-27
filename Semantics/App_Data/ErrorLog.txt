@@ -1,0 +1,589 @@
+********** 04/03/2019 09:51:56 **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Ensure.BllDalClasses.DalClass.SearchEngine.ClsAccountMappingDal.UpdateAccountMapping(ClsAccountMappingBll objbll) in f:\projects\semantics-edusoft-web\Semantics\BllDalClasses\DalClass\SearchEngine\ClsAccountMappingDal.cs:line 31
+   at Ensure.BllDalClasses.BllClass.SearchEngine.ClsAccountMappingBll.UpdateAccountMapping() in f:\projects\semantics-edusoft-web\Semantics\BllDalClasses\BllClass\SearchEngine\ClsAccountMappingBll.cs:line 23
+   at Ensure.Ensure.Process.Account.AccountHeadMapping.btnmap_Click(Object sender, EventArgs e) in f:\projects\semantics-edusoft-web\Semantics\Ensure\Process\Account\AccountHeadMapping.aspx.cs:line 306
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 04/03/2019 09:56:44 **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Ensure.BllDalClasses.DalClass.SearchEngine.ClsAccountMappingDal.UpdateAccountMapping(ClsAccountMappingBll objbll) in f:\projects\semantics-edusoft-web\Semantics\BllDalClasses\DalClass\SearchEngine\ClsAccountMappingDal.cs:line 31
+   at Ensure.BllDalClasses.BllClass.SearchEngine.ClsAccountMappingBll.UpdateAccountMapping() in f:\projects\semantics-edusoft-web\Semantics\BllDalClasses\BllClass\SearchEngine\ClsAccountMappingBll.cs:line 23
+   at Ensure.Ensure.Process.Account.AccountHeadMapping.btnmap_Click(Object sender, EventArgs e) in f:\projects\semantics-edusoft-web\Semantics\Ensure\Process\Account\AccountHeadMapping.aspx.cs:line 306
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 04/03/2019 10:18:52 **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Ensure.Reports.Report.lstDoc() in f:\projects\semantics-edusoft-web\Semantics\Ensure\Reports\RptTemplates.aspx.cs:line 5944
+   at Ensure.Reports.Report.Page_Init(Object sender, EventArgs e) in f:\projects\semantics-edusoft-web\Semantics\Ensure\Reports\RptTemplates.aspx.cs:line 1760
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnInit(EventArgs e)
+   at System.Web.UI.Page.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 04/03/2019 11:15:14 **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Ensure.Ensure.Process.Account.PurchaseEntry_New.GetItemList() in f:\projects\semantics-edusoft-web\Semantics\Ensure\Process\Account\PurchaseEntry_New.aspx.cs:line 788
+   at Ensure.Ensure.Process.Account.PurchaseEntry_New.txtitem_TextChanged(Object sender, EventArgs e) in f:\projects\semantics-edusoft-web\Semantics\Ensure\Process\Account\PurchaseEntry_New.aspx.cs:line 777
+   at System.Web.UI.WebControls.TextBox.OnTextChanged(EventArgs e)
+   at System.Web.UI.WebControls.TextBox.RaisePostDataChangedEvent()
+   at System.Web.UI.WebControls.TextBox.System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent()
+   at System.Web.UI.Page.RaiseChangedEvents()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 04/03/2019 11:15:54 **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Ensure.Ensure.Process.Account.PurchaseEntry_New.GetItemList() in f:\projects\semantics-edusoft-web\Semantics\Ensure\Process\Account\PurchaseEntry_New.aspx.cs:line 788
+   at Ensure.Ensure.Process.Account.PurchaseEntry_New.txtitem_TextChanged(Object sender, EventArgs e) in f:\projects\semantics-edusoft-web\Semantics\Ensure\Process\Account\PurchaseEntry_New.aspx.cs:line 777
+   at System.Web.UI.WebControls.TextBox.OnTextChanged(EventArgs e)
+   at System.Web.UI.WebControls.TextBox.RaisePostDataChangedEvent()
+   at System.Web.UI.WebControls.TextBox.System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent()
+   at System.Web.UI.Page.RaiseChangedEvents()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 22/08/2020 21:30:40 **********
+Inner Exception: Could not find stored procedure 'dbo.aspnet_CheckSchemaVersion'.
+Inner Stack Trace: 
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Web.Util.SecUtility.CheckSchemaVersion(ProviderBase provider, SqlConnection connection, String[] features, String version, Int32& schemaVersionCheck)
+   at System.Web.Profile.SqlProfileProvider.CheckSchemaVersion(SqlConnection connection)
+   at System.Web.Profile.SqlProfileProvider.GetPropertyValuesFromDatabase(String userName, SettingsPropertyValueCollection svc)
+   at System.Web.Profile.SqlProfileProvider.GetPropertyValues(SettingsContext sc, SettingsPropertyCollection properties)
+   at System.Configuration.SettingsBase.GetPropertiesFromProvider(SettingsProvider provider)
+   at System.Configuration.SettingsBase.SetPropertyValueByName(String propertyName, Object propertyValue)
+   at System.Configuration.SettingsBase.set_Item(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.SetInternal(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.set_Item(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.SetPropertyValue(String propertyName, Object propertyValue)
+   at Ensure.BllDalClasses.BllClass.Common.ClsCommon.set_ServerDate(String value) in f:\projects\MyStock\Semantics\BllDalClasses\BllClass\Common\Common.cs:line 2240
+   at Ensure.Login.Page_Load(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 37
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 22/08/2020 21:31:53 **********
+Inner Exception: Invalid object name 'dbo.aspnet_SchemaVersions'.
+Inner Stack Trace: 
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Web.Util.SecUtility.CheckSchemaVersion(ProviderBase provider, SqlConnection connection, String[] features, String version, Int32& schemaVersionCheck)
+   at System.Web.Profile.SqlProfileProvider.CheckSchemaVersion(SqlConnection connection)
+   at System.Web.Profile.SqlProfileProvider.GetPropertyValuesFromDatabase(String userName, SettingsPropertyValueCollection svc)
+   at System.Web.Profile.SqlProfileProvider.GetPropertyValues(SettingsContext sc, SettingsPropertyCollection properties)
+   at System.Configuration.SettingsBase.GetPropertiesFromProvider(SettingsProvider provider)
+   at System.Configuration.SettingsBase.SetPropertyValueByName(String propertyName, Object propertyValue)
+   at System.Configuration.SettingsBase.set_Item(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.SetInternal(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.set_Item(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.SetPropertyValue(String propertyName, Object propertyValue)
+   at Ensure.BllDalClasses.BllClass.Common.ClsCommon.set_ServerDate(String value) in f:\projects\MyStock\Semantics\BllDalClasses\BllClass\Common\Common.cs:line 2240
+   at Ensure.Login.Page_Load(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 37
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 22/08/2020 21:34:27 **********
+Inner Exception: Invalid object name 'dbo.aspnet_SchemaVersions'.
+Inner Stack Trace: 
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Web.Util.SecUtility.CheckSchemaVersion(ProviderBase provider, SqlConnection connection, String[] features, String version, Int32& schemaVersionCheck)
+   at System.Web.Profile.SqlProfileProvider.CheckSchemaVersion(SqlConnection connection)
+   at System.Web.Profile.SqlProfileProvider.GetPropertyValuesFromDatabase(String userName, SettingsPropertyValueCollection svc)
+   at System.Web.Profile.SqlProfileProvider.GetPropertyValues(SettingsContext sc, SettingsPropertyCollection properties)
+   at System.Configuration.SettingsBase.GetPropertiesFromProvider(SettingsProvider provider)
+   at System.Configuration.SettingsBase.SetPropertyValueByName(String propertyName, Object propertyValue)
+   at System.Configuration.SettingsBase.set_Item(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.SetInternal(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.set_Item(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.SetPropertyValue(String propertyName, Object propertyValue)
+   at Ensure.BllDalClasses.BllClass.Common.ClsCommon.set_ServerDate(String value) in f:\projects\MyStock\Semantics\BllDalClasses\BllClass\Common\Common.cs:line 2240
+   at Ensure.Login.Page_Load(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 37
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 22/08/2020 21:36:01 **********
+Inner Exception: Invalid object name 'dbo.aspnet_SchemaVersions'.
+Inner Stack Trace: 
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Web.Util.SecUtility.CheckSchemaVersion(ProviderBase provider, SqlConnection connection, String[] features, String version, Int32& schemaVersionCheck)
+   at System.Web.Profile.SqlProfileProvider.CheckSchemaVersion(SqlConnection connection)
+   at System.Web.Profile.SqlProfileProvider.GetPropertyValuesFromDatabase(String userName, SettingsPropertyValueCollection svc)
+   at System.Web.Profile.SqlProfileProvider.GetPropertyValues(SettingsContext sc, SettingsPropertyCollection properties)
+   at System.Configuration.SettingsBase.GetPropertiesFromProvider(SettingsProvider provider)
+   at System.Configuration.SettingsBase.SetPropertyValueByName(String propertyName, Object propertyValue)
+   at System.Configuration.SettingsBase.set_Item(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.SetInternal(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.set_Item(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.SetPropertyValue(String propertyName, Object propertyValue)
+   at Ensure.BllDalClasses.BllClass.Common.ClsCommon.set_ServerDate(String value) in f:\projects\MyStock\Semantics\BllDalClasses\BllClass\Common\Common.cs:line 2240
+   at Ensure.Login.Page_Load(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 37
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 22/08/2020 21:37:15 **********
+Inner Exception: Invalid object name 'dbo.aspnet_SchemaVersions'.
+Inner Stack Trace: 
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Web.Util.SecUtility.CheckSchemaVersion(ProviderBase provider, SqlConnection connection, String[] features, String version, Int32& schemaVersionCheck)
+   at System.Web.Profile.SqlProfileProvider.CheckSchemaVersion(SqlConnection connection)
+   at System.Web.Profile.SqlProfileProvider.GetPropertyValuesFromDatabase(String userName, SettingsPropertyValueCollection svc)
+   at System.Web.Profile.SqlProfileProvider.GetPropertyValues(SettingsContext sc, SettingsPropertyCollection properties)
+   at System.Configuration.SettingsBase.GetPropertiesFromProvider(SettingsProvider provider)
+   at System.Configuration.SettingsBase.SetPropertyValueByName(String propertyName, Object propertyValue)
+   at System.Configuration.SettingsBase.set_Item(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.SetInternal(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.set_Item(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.SetPropertyValue(String propertyName, Object propertyValue)
+   at Ensure.BllDalClasses.BllClass.Common.ClsCommon.set_ServerDate(String value) in f:\projects\MyStock\Semantics\BllDalClasses\BllClass\Common\Common.cs:line 2240
+   at Ensure.Login.Page_Load(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 37
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 22/08/2020 21:37:55 **********
+Inner Exception: Invalid object name 'dbo.aspnet_SchemaVersions'.
+Inner Stack Trace: 
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Web.Util.SecUtility.CheckSchemaVersion(ProviderBase provider, SqlConnection connection, String[] features, String version, Int32& schemaVersionCheck)
+   at System.Web.Profile.SqlProfileProvider.CheckSchemaVersion(SqlConnection connection)
+   at System.Web.Profile.SqlProfileProvider.GetPropertyValuesFromDatabase(String userName, SettingsPropertyValueCollection svc)
+   at System.Web.Profile.SqlProfileProvider.GetPropertyValues(SettingsContext sc, SettingsPropertyCollection properties)
+   at System.Configuration.SettingsBase.GetPropertiesFromProvider(SettingsProvider provider)
+   at System.Configuration.SettingsBase.SetPropertyValueByName(String propertyName, Object propertyValue)
+   at System.Configuration.SettingsBase.set_Item(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.SetInternal(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.set_Item(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.SetPropertyValue(String propertyName, Object propertyValue)
+   at Ensure.BllDalClasses.BllClass.Common.ClsCommon.set_ServerDate(String value) in f:\projects\MyStock\Semantics\BllDalClasses\BllClass\Common\Common.cs:line 2240
+   at Ensure.Login.Page_Load(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 37
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 22/08/2020 22:01:43 **********
+Inner Exception: Invalid object name 'dbo.aspnet_SchemaVersions'.
+Inner Stack Trace: 
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Web.Util.SecUtility.CheckSchemaVersion(ProviderBase provider, SqlConnection connection, String[] features, String version, Int32& schemaVersionCheck)
+   at System.Web.Profile.SqlProfileProvider.CheckSchemaVersion(SqlConnection connection)
+   at System.Web.Profile.SqlProfileProvider.GetPropertyValuesFromDatabase(String userName, SettingsPropertyValueCollection svc)
+   at System.Web.Profile.SqlProfileProvider.GetPropertyValues(SettingsContext sc, SettingsPropertyCollection properties)
+   at System.Configuration.SettingsBase.GetPropertiesFromProvider(SettingsProvider provider)
+   at System.Configuration.SettingsBase.SetPropertyValueByName(String propertyName, Object propertyValue)
+   at System.Configuration.SettingsBase.set_Item(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.SetInternal(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.set_Item(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.SetPropertyValue(String propertyName, Object propertyValue)
+   at Ensure.BllDalClasses.BllClass.Common.ClsCommon.set_ServerDate(String value) in f:\projects\MyStock\Semantics\BllDalClasses\BllClass\Common\Common.cs:line 2240
+   at Ensure.Login.Page_Load(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 37
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 22/08/2020 22:13:56 **********
+Inner Exception: Could not find stored procedure 'dbo.aspnet_Profile_GetProperties'.
+Inner Stack Trace: 
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Web.Profile.SqlProfileProvider.GetPropertyValuesFromDatabase(String userName, SettingsPropertyValueCollection svc)
+   at System.Web.Profile.SqlProfileProvider.GetPropertyValues(SettingsContext sc, SettingsPropertyCollection properties)
+   at System.Configuration.SettingsBase.GetPropertiesFromProvider(SettingsProvider provider)
+   at System.Configuration.SettingsBase.SetPropertyValueByName(String propertyName, Object propertyValue)
+   at System.Configuration.SettingsBase.set_Item(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.SetInternal(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.set_Item(String propertyName, Object value)
+   at System.Web.Profile.ProfileBase.SetPropertyValue(String propertyName, Object propertyValue)
+   at Ensure.BllDalClasses.BllClass.Common.ClsCommon.set_ServerDate(String value) in f:\projects\MyStock\Semantics\BllDalClasses\BllClass\Common\Common.cs:line 2240
+   at Ensure.Login.Page_Load(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 37
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 22/08/2020 22:49:04 **********
+Inner Exception: Column 'msg' does not belong to table .
+Inner Stack Trace: 
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at Ensure.Login.FxLogin() in f:\projects\MyStock\Semantics\Login.aspx.cs:line 168
+   at Ensure.Login.btnLogin_OnClick(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 109
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 22/08/2020 22:49:38 **********
+Inner Exception: Column 'GROUPID' does not belong to table .
+Inner Stack Trace: 
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at Ensure.Login.getuserdata(DataTable dt) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 272
+   at Ensure.Login.FxLogin() in f:\projects\MyStock\Semantics\Login.aspx.cs:line 183
+   at Ensure.Login.btnLogin_OnClick(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 109
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 22/08/2020 22:54:15 **********
+Inner Exception: Column 'SystemType' does not belong to table .
+Inner Stack Trace: 
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at Ensure.BllClass.Setup.Company.clsCompProfileBll.GetCompanySystemType() in f:\projects\MyStock\Semantics\BllDalClasses\BllClass\Setup\Company\clsCompProfileBll.cs:line 61
+   at Ensure.Login.getuserdata(DataTable dt) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 275
+   at Ensure.Login.FxLogin() in f:\projects\MyStock\Semantics\Login.aspx.cs:line 183
+   at Ensure.Login.btnLogin_OnClick(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 109
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 22/08/2020 22:55:45 **********
+Inner Exception: Column 'SystemType' does not belong to table .
+Inner Stack Trace: 
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at Ensure.BllClass.Setup.Company.clsCompProfileBll.GetCompanySystemType() in f:\projects\MyStock\Semantics\BllDalClasses\BllClass\Setup\Company\clsCompProfileBll.cs:line 61
+   at Ensure.Login.getuserdata(DataTable dt) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 275
+   at Ensure.Login.FxLogin() in f:\projects\MyStock\Semantics\Login.aspx.cs:line 183
+   at Ensure.Login.btnLogin_OnClick(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 109
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 22/08/2020 22:57:03 **********
+Inner Exception: Column 'BranchName' does not belong to table .
+Inner Stack Trace: 
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at Ensure.Login.getuserdata(DataTable dt) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 278
+   at Ensure.Login.FxLogin() in f:\projects\MyStock\Semantics\Login.aspx.cs:line 183
+   at Ensure.Login.btnLogin_OnClick(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 109
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 22/08/2020 22:57:40 **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Ensure.BllDalClasses.DalClass.User.ClsLoginHistoryDal.insertupdateUserHistory(ClsLoginHistory clsLoginHistory) in f:\projects\MyStock\Semantics\BllDalClasses\DalClass\User\ClsLoginHistoryDal.cs:line 44
+   at Ensure.BllDalClasses.BllClass.User.ClsLoginHistory.insertupdateUserHistory() in f:\projects\MyStock\Semantics\BllDalClasses\BllClass\User\ClsLoginHistory.cs:line 38
+   at Ensure.Login.keephistory(Int32 issuccess) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 254
+   at Ensure.Login.FxLogin() in f:\projects\MyStock\Semantics\Login.aspx.cs:line 184
+   at Ensure.Login.btnLogin_OnClick(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 109
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 22/08/2020 22:59:27 **********
+Inner Exception: Invalid object name 'tblHR_employee'.
+Inner Stack Trace: 
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at ensure.SemanticsFront.Page_Load(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\SemanticsFront.aspx.cs:line 212
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 22/08/2020 23:19:24 **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Ensure.StockFront.Page_Load(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\StockFront.aspx.cs:line 108
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 24/08/2020 17:24:40 **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Ensure.BllDalClasses.DalClass.User.ClsLoginHistoryDal.insertupdateUserHistory(ClsLoginHistory clsLoginHistory) in f:\projects\MyStock\Semantics\BllDalClasses\DalClass\User\ClsLoginHistoryDal.cs:line 44
+   at Ensure.BllDalClasses.BllClass.User.ClsLoginHistory.insertupdateUserHistory() in f:\projects\MyStock\Semantics\BllDalClasses\BllClass\User\ClsLoginHistory.cs:line 38
+   at Ensure.Login.keephistory(Int32 issuccess) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 251
+   at Ensure.Login.FxLogin() in f:\projects\MyStock\Semantics\Login.aspx.cs:line 187
+   at Ensure.Login.btnLogin_OnClick(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 109
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 24/08/2020 17:26:11 **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Ensure.BllDalClasses.DalClass.User.ClsLoginHistoryDal.insertupdateUserHistory(ClsLoginHistory clsLoginHistory) in f:\projects\MyStock\Semantics\BllDalClasses\DalClass\User\ClsLoginHistoryDal.cs:line 44
+   at Ensure.BllDalClasses.BllClass.User.ClsLoginHistory.insertupdateUserHistory() in f:\projects\MyStock\Semantics\BllDalClasses\BllClass\User\ClsLoginHistory.cs:line 38
+   at Ensure.Login.keephistory(Int32 issuccess) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 251
+   at Ensure.Login.FxLogin() in f:\projects\MyStock\Semantics\Login.aspx.cs:line 187
+   at Ensure.Login.btnLogin_OnClick(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Login.aspx.cs:line 109
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 24/08/2020 17:39:06 **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at ASP.stockfront_aspx.__Render__control15(HtmlTextWriter __w, Control parameterContainer) in f:\projects\MyStock\Semantics\StockFront.aspx:line 816
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at ASP.stockfront_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\Bikesh\AppData\Local\Temp\Temporary ASP.NET Files\vs\520d402f\32c67901\App_Web_ugeuoser.3.cs:line 0
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Page.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 24/08/2020 17:40:36 **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at ASP.stockfront_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in f:\projects\MyStock\Semantics\StockFront.aspx:line 1119
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Page.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 24/08/2020 17:41:04 **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at ASP.stockfront_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in f:\projects\MyStock\Semantics\StockFront.aspx:line 1119
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Page.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 25/08/2020 19:54:01 **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.BllDalClasses.BllClass.Common.ClsBind.FxComboSelectecIndex(DropDownList& ddl, String val, String findBy) in f:\projects\MyStock\Semantics\BllDalClasses\BllClass\Common\Common.cs:line 2676
+   at Stock.Stock.Process.PurchaseEntry.Page_Load(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Stock\Process\PurchaseEntry.aspx.cs:line 98
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 25/08/2020 19:54:05 **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.BllDalClasses.BllClass.Common.ClsBind.FxComboSelectecIndex(DropDownList& ddl, String val, String findBy) in f:\projects\MyStock\Semantics\BllDalClasses\BllClass\Common\Common.cs:line 2676
+   at Stock.Stock.Process.PurchaseEntry.Page_Load(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Stock\Process\PurchaseEntry.aspx.cs:line 98
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 25/08/2020 19:54:06 **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.BllDalClasses.BllClass.Common.ClsBind.FxComboSelectecIndex(DropDownList& ddl, String val, String findBy) in f:\projects\MyStock\Semantics\BllDalClasses\BllClass\Common\Common.cs:line 2676
+   at Stock.Stock.Process.PurchaseEntry.Page_Load(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Stock\Process\PurchaseEntry.aspx.cs:line 98
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 25/08/2020 21:29:28 **********
+Inner Exception: DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'PURCHASEID'.
+Inner Stack Trace: 
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName, String format)
+   at System.Web.UI.WebControls.ListControl.PerformDataBinding(IEnumerable dataSource)
+   at System.Web.UI.WebControls.ListControl.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.ListControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at Stock.Stock.Process.PurchaseEntry.GetItemList() in f:\projects\MyStock\Semantics\Stock\Process\PurchaseEntry.aspx.cs:line 629
+   at Stock.Stock.Process.PurchaseEntry.txtitemsearch_Click(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Stock\Process\PurchaseEntry.aspx.cs:line 635
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 25/08/2020 21:30:44 **********
+Inner Exception: DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'PURCHASEID'.
+Inner Stack Trace: 
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName, String format)
+   at System.Web.UI.WebControls.ListControl.PerformDataBinding(IEnumerable dataSource)
+   at System.Web.UI.WebControls.ListControl.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.ListControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at Stock.Stock.Process.PurchaseEntry.GetItemList() in f:\projects\MyStock\Semantics\Stock\Process\PurchaseEntry.aspx.cs:line 629
+   at Stock.Stock.Process.PurchaseEntry.txtitemsearch_Click(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Stock\Process\PurchaseEntry.aspx.cs:line 635
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 25/08/2020 21:30:45 **********
+Inner Exception: DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'PURCHASEID'.
+Inner Stack Trace: 
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName, String format)
+   at System.Web.UI.WebControls.ListControl.PerformDataBinding(IEnumerable dataSource)
+   at System.Web.UI.WebControls.ListControl.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.ListControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at Stock.Stock.Process.PurchaseEntry.GetItemList() in f:\projects\MyStock\Semantics\Stock\Process\PurchaseEntry.aspx.cs:line 629
+   at Stock.Stock.Process.PurchaseEntry.txtitemsearch_Click(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Stock\Process\PurchaseEntry.aspx.cs:line 635
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 25/08/2020 22:12:42 **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.Stock.Process.PurchaseEntry.btnEdit_Click(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Stock\Process\PurchaseEntry.aspx.cs:line 256
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 25/08/2020 22:16:20 **********
+Inner Exception: Column 'pDiscRate' does not belong to table Table.
+Inner Stack Trace: 
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at Stock.Stock.Process.PurchaseEntry.btnEdit_Click(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Stock\Process\PurchaseEntry.aspx.cs:line 281
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 26/08/2020 21:52:45 **********
+Inner Exception: DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'PurchaseID'.
+Inner Stack Trace: 
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at System.Web.UI.DataBinder.Eval(Object container, String expression)
+   at System.Web.UI.TemplateControl.Eval(String expression)
+   at ASP.stock_searchengine_salessearch_aspx.__DataBind__control21(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Stock\SearchEngine\SalesSearch.aspx:line 261
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.Repeater.CreateItem(Int32 itemIndex, ListItemType itemType, Boolean dataBind, Object dataItem)
+   at System.Web.UI.WebControls.Repeater.AddDataItemsIntoItemsArray(IEnumerable dataSource, Boolean useDataSource)
+   at System.Web.UI.WebControls.Repeater.PostGetDataAction(IEnumerable dataSource)
+   at System.Web.UI.WebControls.Repeater.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.Repeater.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.Repeater.DataBind()
+   at Stock.Stock.SearchEngine.SalesSearch.btnSearch_Click(Object sender, EventArgs e) in f:\projects\MyStock\Semantics\Stock\SearchEngine\SalesSearch.aspx.cs:line 162
+   at System.EventHandler.Invoke(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

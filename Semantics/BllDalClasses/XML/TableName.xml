@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tableName>
+  <tables>
+    <id>0</id>
+    <name>None</name>
+    <checked>false</checked>
+  </tables>
+  <tables>
+    <id>1</id>
+    <name>Branch</name>
+    <checked>false</checked>
+  </tables>
+  <tables>
+    <id>2</id>
+    <name>Department</name>
+    <checked>false</checked>
+  </tables>
+  <tables>
+    <id>3</id>
+    <name>Class</name>
+    <checked>false</checked>
+  </tables>
+  <tables>
+    <id>4</id>
+    <name>DocType</name>
+    <checked>false</checked>
+  </tables>
+  <tables>
+    <id>5</id>
+    <name>FiscalYear</name>
+    <checked>false</checked>
+  </tables>
+</tableName>

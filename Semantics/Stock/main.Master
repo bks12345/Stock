@@ -1,0 +1,191 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="Stock.Stock.main" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <%--css links--%>
+    <link href="../Design/css1/tablecss/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+    <link href="../Design/css1/tablecss/dataTables.fixedColumns.css" rel="stylesheet" type="text/css" />
+    <link href="../Design/css1/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../Design/css1/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="../Design/css1/stylesheet.css" rel="stylesheet" type="text/css" />
+    <%--<link id="themeStyle" href="../Design/css1/layout.css" rel="stylesheet" type="text/css" />--%>
+    <%--<link href="../Design/css1/themes/blue.css" rel="stylesheet" type="text/css" />--%>
+     <link href="../Design/css1/layout.css" rel="stylesheet" type="text/css" />
+    <%--<link href="../Design/css1/font.css" rel="stylesheet" type="text/css" />--%>
+    <link id="lnkNepaliFont" href="../Design/css1/Fontasy.css" runat="server" rel="stylesheet" />
+    <link href="../Design/css1/responsive-media-query.css" rel="stylesheet" type="text/css" />
+    <%--<link href="../Design/ScrollTable/scrollTable.css" rel="stylesheet" type="text/css" />--%>
+    <link href="../Design/css1/gallery/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <%--<script language="javascript" type="text/javascript">
+        function enterToTab(e) {
+            var intKey = window.Event ? e.which : e.KeyCode;
+
+
+            if (intKey == 13 && e.target.type!="submit") {
+                //    e.returnValue = false;
+                e.preventDefault();
+                var next = $('[tabindex="' + (e.target.tabIndex + 1) + '"]');
+                
+                if (next.length)
+                    next.focus()
+                else
+                    $('[tabindex="0"]').focus();
+            }
+        }
+</script>--%>
+</head>
+<body  oncontextmenu="return false"  onclick="HideMenu('contextMenu');"  >
+    <form id="form1" runat="server" class="form-horizontal">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <%--js links--%>
+     <%--<script src="../../../Design/js1/jquery.1.11.1.min.js" type="text/javascript"></script>
+    <script src="../../../Design/js1/tablejs/jquery.js" type="text/javascript"></script>
+    <script src="../../../Design/js1/tablejs/jquery.dataTables.js" type="text/javascript"></script>
+    <script src="../../../Design/js1/tablejs/dataTables.fixedColumns.js" type="text/javascript"></script>      
+    <script src="../../../Design/js1/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../../../Design/js1/togglesearchnav.js" type="text/javascript"></script>--%>
+    <script src="/Design/js1/jquery.1.11.1.min.js" type="text/javascript"></script>
+    <script src="/Design/js1/tablejs/jquery.js" type="text/javascript"></script>
+    <script src="/Design/js1/tablejs/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="/Design/js1/tablejs/dataTables.fixedColumns.min.js" type="text/javascript"></script>   
+    <script src="/Design/js1/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/Design/js1/togglesearchnav.min.js" type="text/javascript"></script>
+    <script src="/Design/js1/gallery/jquery.fancybox.js" type="text/javascript"></script>
+ <%--for table--%>
+    <script>
+</script>
+<%--table active script--%>
+    <script>
+        $(function () {
+            $('#rpt tbody tr').click(function () {
+                $('#rpt tbody tr.select_table').removeClass('select_table');
+                $(this).addClass('select_table');
+            });
+            $('#rpt1 tbody tr').click(function () {
+                $('#rpt1 tbody tr.select_table').removeClass('select_table');
+                $(this).addClass('select_table');
+            });
+            $('#rpt2 tbody tr').click(function () {
+                $('#rpt2 tbody tr.select_table').removeClass('select_table');
+                $(this).addClass('select_table');
+            });
+            $('#rpt3 tbody tr').click(function () {
+                $('#rpt3 tbody tr.select_table').removeClass('select_table');
+                $(this).addClass('select_table');
+            });
+            $('#rpt4 tbody tr').click(function () {
+                $('#rpt4 tbody tr.select_table').removeClass('select_table');
+                $(this).addClass('select_table');
+            });
+            $('#rpt5 tbody tr').click(function () {
+                $('#rpt5 tbody tr.select_table').removeClass('select_table');
+                $(this).addClass('select_table');
+            });
+            $('#rpt tbody').on('contextmenu', 'tr', function () {
+                $('#rpt tbody tr.select_table').removeClass('select_table');
+                $(this).addClass('select_table');
+            });
+        });
+
+    </script>
+     <%--for table--%>
+    <script>
+        //        $(document).ready(function () {
+        //            var table = $('#rpt').DataTable({
+        //                scrollY: "65vh",
+        //                scrollX: true,
+        //                scrollCollapse: true,
+        //                paging: false
+        //            });
+
+        //            new $.fn.dataTable.FixedColumns(table, {
+        //                leftColumns: 1,
+        //                rightColumns: 1
+        //            });
+        //        });
+        //        $(document).ready(function () {
+        //            var table1 = $('#rpt1').DataTable({
+        //                scrollY: "65vh",
+        //                scrollX: true,
+        //                scrollCollapse: true,
+        //                paging: false
+        //            });
+
+        //            new $.fn.dataTable.FixedColumns(table1, {
+        //                leftColumns: 1,
+        //                rightColumns: 1
+        //            });
+        //        });
+        //        $(document).ready(function () {
+        //            var table2 = $('#rpt2').DataTable({
+        //                scrollY: "65vh",
+        //                scrollX: true,
+        //                scrollCollapse: true,
+        //                paging: false
+        //            });
+
+        //            new $.fn.dataTable.FixedColumns(table2, {
+        //                leftColumns: 1,
+        //                rightColumns: 1
+        //            });
+        //        });
+        //        $(document).ready(function () {
+        //            var table3 = $('#rpt3').DataTable({
+        //                scrollY: "65vh",
+        //                scrollX: true,
+        //                scrollCollapse: true,
+        //                paging: false
+        //            });
+
+        //            new $.fn.dataTable.FixedColumns(table3, {
+        //                leftColumns: 1,
+        //                rightColumns: 1
+        //            });
+        //        });
+        //        $(document).ready(function () {
+        //            var table4 = $('#rpt4').DataTable({
+        //                scrollY: "65vh",
+        //                scrollX: true,
+        //                scrollCollapse: true,
+        //                paging: false
+        //            });
+
+        //            new $.fn.dataTable.FixedColumns(table4, {
+        //                leftColumns: 1,
+        //                rightColumns: 1
+        //            });
+        //        });
+        //        $(document).ready(function () {
+        //            var table5 = $('#rpt5').DataTable({
+        //                scrollY: "65vh",
+        //                scrollX: true,
+        //                scrollCollapse: true,
+        //                paging: false
+        //            });
+
+        //            new $.fn.dataTable.FixedColumns(table5, {
+        //                leftColumns: 1,
+        //                rightColumns: 1
+        //            });
+        //        });
+</script>
+<%--<script type="text/javascript" language="javascript">
+    Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+    function EndRequestHandler(sender, args) {
+        if (args.get_error() != undefined) {
+            args.set_errorHandled(true);
+        }
+    }
+</script>--%>
+</body>
+</html>

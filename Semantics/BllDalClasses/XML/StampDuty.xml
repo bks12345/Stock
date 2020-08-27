@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<stampDuty>
+  <stamp>
+    <stampId>1</stampId>
+    <stampPrice>0</stampPrice>
+  </stamp>
+  <stamp>
+    <stampId>2</stampId>
+    <stampPrice>5</stampPrice>
+  </stamp>
+  <stamp>
+    <stampId>3</stampId>
+    <stampPrice>2</stampPrice>
+  </stamp>
+</stampDuty>

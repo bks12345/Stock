@@ -1,0 +1,17 @@
+﻿
+.uw-branch input[type=submit]:enabled { cursor: pointer; }
+.error { color: Red; }
+.customvalidatorcalloutstyle div, .customvalidatorcalloutstyle td { border: 1px solid #2670C9; background-color: #408AE3; }
+.customvalidatorcalloutstyle .ajax__validatorcallout_error_message_cell { font-family: Verdana; font-size: 11px; padding: 9px; border-right: medium none !important; border-left: medium none !important; width: 100%; color: white; font-weight: bold; }
+.customvalidatorcalloutstyle .ajax__validatorcallout_close_button_cell .ajax__validatorcallout_innerdiv { border: medium none !important; text-align: center; width: 12px; padding: 1px; cursor: pointer; opacity: 0.9; }
+.customvalidatorcalloutstyle .ajax__validatorcallout_icon_cell { width: 20px; padding: 2px; margin: 0px; border-right: medium none !important; }
+.customvalidatorcalloutstyle .ajax__validatorcallout_callout_cell { width: 20px; height: 100%; text-align: right; vertical-align: middle; border: medium none !important; background-color: transparent !important; padding: 0px; margin: 0px; }
+/* added css */
+.uw-branch { width: 720px; height: auto; margin-left: 40px; margin-top: 40px; }
+.uw-branch-label { float: left; width: 80px; }
+.uw-branch-leftmid { float: left; width: 48%; }
+.uw-branch-left { float: left; margin-bottom: 30px; margin-left: 30px; width: 30%; }
+.uw-branch-btn { float: right; margin-right: 30px; } 
+.uw-branch-error1 { color: Red; }
+.uw-branch-list { height: 275px; width: 200px; }
+.block div { display: inline-block; }

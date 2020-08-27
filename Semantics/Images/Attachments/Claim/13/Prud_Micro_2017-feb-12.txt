@@ -1,0 +1,48 @@
+create or replace PROCEDURE uw_micro_HH_Update ( 
+  
+  P_DOCUMENTNO IN TDDOCIDENTMICRO_HH.DOCUMENTNO% TYPE,
+ P_HOUSEHOLDAMNT IN TDDOCIDENTMICRO_HH.amount_house% TYPE,
+  P_KITCHENAMNT IN TDDOCIDENTMICRO_HH.amount_kit% TYPE,
+ P_ELECTRICDESC IN TDDOCIDENTMICRO_HH.description_elec% TYPE,
+ P_ELECTRICAMNT IN TDDOCIDENTMICRO_HH.amount_elec% TYPE,
+  P_SOLARAMNT IN TDDOCIDENTMICRO_HH.amount_solar% TYPE,
+   P_AGRICULTUREDESC IN TDDOCIDENTMICRO_HH.description_agri% TYPE,
+    P_AGRICULTUREAMNT IN TDDOCIDENTMICRO_HH.amount_agri% TYPE,
+     P_ANUDANRATE IN TDDOCIDENTMICRO_HH.ANUDANRATE% TYPE,
+      P_SUMINSURED IN TDDOCIDENTMICRO_HH.SUMINSURED% TYPE,
+P_IssuePlace IN TDDOCIDENTMICRO_HH.IssuePlace % TYPE,
+   P_zoneid IN TDDOCIDENTMICRO_HH.zoneid% TYPE,
+     P_districtid IN TDDOCIDENTMICRO_HH.districtid% TYPE,
+       P_mnucode IN TDDOCIDENTMICRO_HH.mnucode% TYPE,
+         P_vdccode IN TDDOCIDENTMICRO_HH.vdccode% TYPE,
+           P_wardno IN TDDOCIDENTMICRO_HH.wardno% TYPE,
+             P_plotno IN TDDOCIDENTMICRO_HH.plotno% TYPE
+       
+  
+) 
+IS
+BEGIN
+
+UPDATE TDDOCIDENTMICRO_HH SET
+amount_house=P_HOUSEHOLDAMNT,
+amount_kit=P_KITCHENAMNT,
+description_elec=P_ELECTRICDESC,
+amount_elec=P_ELECTRICAMNT,
+amount_solar=P_SOLARAMNT,
+description_agri=P_AGRICULTUREDESC,
+amount_agri=P_AGRICULTUREAMNT,
+ANUDANRATE=P_ANUDANRATE,
+SUMINSURED=P_SUMINSURED,
+IssuePlace=P_IssuePlace,
+ zoneid=P_zoneid,
+    districtid= P_districtid,
+    mnucode=   P_mnucode,
+       vdccode=  P_vdccode,
+        wardno=   P_wardno,
+            plotno= P_plotno
+WHERE
+DOCUMENTNO=P_DOCUMENTNO;
+
+
+  
+END; 

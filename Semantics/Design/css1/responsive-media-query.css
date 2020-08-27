@@ -1,0 +1,75 @@
+/*===================================================
+Responsive Style Sheet 
+Project: Ensure UI
+Css Developed and Design : Sunil Duwal ~ (suwedds@gmail.com)
+website: http://www.sunilduwal.com.np/
+===================================================*/
+
+/* responsive starts*/ 
+/*@media screen and (min-height:701px){.fixed-container {height: 86%!important;}}
+@media screen and (max-height:700px){.fixed-container {height: 82%!important;}}*/
+@media only screen and (max-width:1280px){.page-container {height: 95.2%;padding-bottom:7px;}.page-sidebar.navbar-collapse.collapse.sidebar {overflow-x: hidden !important;overflow-y:scroll !important;}#pageContainer {padding-bottom:24px;}}
+@media screen and (max-height:600px){.fixed-container {height:82vh!important;}.toggleme {top: 7.4%!important;}.search-form {height: 76.5vh;}}
+@media screen and (min-height:601px) and (max-height:768px) {.fixed-container {height: 84.1vh!important;}}
+@media (max-width: 767px){.sidebar {width: 100px;}/*.page-wrapper{left:100px;}*/}
+@media only screen and (max-width:1010px) and (min-width:768px) {.noti_top1{display:block!important;}}
+@media screen and (max-width:767px) {#navbar {background: #fff none repeat scroll 0 0;}#noti2 {width:83%;}.top-sdiv {padding-left: 0;}.dropdown {position: static !important;}.navbar-nav .open .dropdown-menu {background-color: #fff;border: 1px solid #eeeeee;border-radius: 5px;left: 57% !important;position: absolute;top: 60px;width: 230px;}.sidebar{width:200px;}.image-section img {width: auto!important;}
+.navbar-collapse.collapse.in, .navbar-collapse.collapse,  .navbar-collapse.collapsing {/*width: 50%!important;*/max-height:1000px!important;}#noti2 {width: 100%;}#noti2 .top-noti1 {width: auto;}/*#noti2 li {width: 20%;}*/.navbar-nav .open .dropdown-menu {position: static;width: auto;border:1px solid #ccc;}.shortcut-drop-inner {width: 100%;}.top-right {top: 170px;}}
+@media screen and (min-width:543px) and (max-width:512px) {.navbar-nav .open .dropdown-menu {left: 47% !important;}}
+@media screen and (max-width:511px) {#noti2 {width:100%;}.nav.navbar-nav.navbar-right.nav-pills > li:nth-child(2) {margin-left: 40%;}.navbar-nav .open .dropdown-menu {left: 0% !important;}}
+@media screen and (max-width:768px){.fixed-header, .fixed-container, .fixed-footer{position:static;height:auto!important;}}
+@media (max-height: 768px){.fixed-container.fixed-container-new {height: 90%!important;}}
+@media (max-height: 700px) {.search-form {height: 78vh;}}
+@media only screen and (max-width:1160px) {.search-rticon {margin-top: 0px;}.search-icon {padding: 2px;width: 24px;}}
+@media only screen and (max-width:997px){.removepadding {padding: 0 15px;}.searc-nav-tab {position: static;}.search-section .policy-marg {margin-top: 0!important;padding-top: 0!important;}.debit-marg{margin-top:0!important;}}
+
+@media only screen and (max-width:1200px) and (min-width: 1024px) {
+    #noti2 {
+	    width: 354px;
+    }
+
+    #noti2 li {
+	    margin-left: 4%;
+	    width: 10%;
+    }
+
+    .pwexpire {
+	    width: 30%;
+	    margin: -10px 0 0 63px;
+    }
+}
+
+@media only screen and (max-width:1023px) and (min-width: 0px) {
+    #noti2 {
+	    display: none;
+    }
+}
+
+@media only screen and (max-width:1024px) and (min-width: 768px) {
+    .pwexpire {
+	    width: 50%;
+	    margin: -10px 0 0 100px;
+    }
+}
+
+@media only screen and (max-width:767px) and (min-width: 479px) {
+    #WelcomeUser {
+        margin: -65px 0 0 !important;
+        width: 50% !important;
+        float: right !important;
+    }
+
+    .pwexpire {
+	    width: 50%;
+	    margin: -10px 0 0 143px;
+	    font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:480px) and (min-width: 0px) {
+    #WelcomeUser,
+    .pwexpire {
+        display: none;
+    }
+}
+

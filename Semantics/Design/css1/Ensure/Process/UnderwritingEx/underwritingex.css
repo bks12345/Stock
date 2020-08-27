@@ -1,0 +1,44 @@
+﻿  
+        .btn-cancel, .btn-back, .btn-next, .btn-finish, .btn-print
+        {
+           /* width: 26px;
+            height: 30px;
+            margin-left: 10px;
+            background-size: 100% !important;
+            border: none !important;*/
+            width: 27px;
+            height: 29px;
+            margin-left: 5px;
+            background-size: 80% !important;
+        }
+        .btn-cancel:hover, .btn-back:hover, .btn-next:hover, .btn-finish:hover, .btn-print:hover, .btn-cancel:disabled, .btn-back:disabled, .btn-next:disabled, .btn-finish:disabled, .btn-print:disabled
+        {
+            background-color: transparent !important;
+            border-color:rgba(0,0,0,0.5)!important;
+        }
+        .btn-cancel
+        {
+            background: url('/Design/img1/close-issue-2.png') center no-repeat;
+        }
+        .btn-back
+        {
+            background: url('/Design/img1/arrow-issue-3.png') center no-repeat;
+        }
+        .btn-next
+        {
+            background: url('/Design/img1/arrow-issue-1.png') center no-repeat;
+        }
+        .btn-finish
+        {
+            background: url('/Design/img1/save-issue-1.png') center no-repeat;
+        }
+        .btn-print
+        {
+            background: url('/Design/img1/print-issue-1.png') center no-repeat;
+        }
+
+        .ajax__htmleditor_editor_default .ajax__htmleditor_editor_container {
+ 
+  height: 250px !important;
+  width: 100% !important;
+}

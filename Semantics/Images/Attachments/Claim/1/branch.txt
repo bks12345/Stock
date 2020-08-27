@@ -1,0 +1,19 @@
+Single Record View
+As of: 4/6/2017 8:00:30 PM
+
+BRANCHCODE:  02
+ENAME:       Birgunj
+NNAME:       jL<u_h
+ADDRESS:     Birgunj
+TELNO:       4252525
+FAXNO:       
+EMAIL:       
+ALIAS:       BRJ
+CODE:        02
+NADDRESS:    jL<u_h
+ABBR:        
+LSUID:       
+LSDT:        
+LMID:        
+LMDT:        
+REGIONCODE:  

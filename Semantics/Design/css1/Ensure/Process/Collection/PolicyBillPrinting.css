@@ -1,0 +1,7 @@
+﻿
+/*.dataTables_scrollBody { width: 103% !important;}
+.dataTables_scrollBody { height: 20vh !important;}*/
+.table-design{height:20vh;}
+@media (max-width: 800px) { .margintop { margin-top: 5px !important; }}
+@media (max-width: 980px) { #ContentPlaceHolder1_Label48 {  margin-left: 15px;} }
+  

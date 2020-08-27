@@ -1,0 +1,354 @@
+﻿/*-----
+Layout Style Sheet 
+Project: Ensure UI
+Css Developed and Design : Sunil Duwal ~ (suwedds@gmail.com)
+website: http://www.sunilduwal.com.np/
+------*/
+
+body{color:#5b5b5b; font-size:12px; }
+.bg-custom { background: none repeat scroll 0 0 #eeeeee; margin-bottom: 10px; padding: 10px;}
+.important {color:#ff0000!important;}    
+.form-horizontal .control-label { text-align:left; padding-top:0;}
+.container-body { border: 1px solid #e2e2e2; height: 100%; overflow: hidden; position: relative; }
+.form-control { border-radius:0px;}
+.search-section { border-right:1px solid #e2e2e2;}
+.nav-pills > li > a { border-radius:0; text-align:center; }
+.searc-nav-tab { border-bottom: 1px solid #ebebeb; font-size: 14px; margin-bottom: 10px; padding-bottom: 0;}
+.input-group-addon { padding:5px; }
+.toggleClass { padding: 20px 0; position: relative;}
+.no-js .bb-custom-wrapper nav span, .no-js .menu-button { display: none; }
+.search-form, .output-generate-table { height: 73vh; }
+.button-footer { background: none repeat scroll 0 0 #105991; padding: 8px 0; position: relative; text-align: right; z-index: 9999; top: 0px; left: 0px;}
+.btn-default { color:#105991;}
+.form-group-title { border-bottom: 1px solid #ebebeb; margin-bottom: 8px !important; padding-bottom: 5px;}
+ 
+/*Renewal Search Engine*/
+.form-group-div { border-top: 1px solid #ebebeb; padding-top: 15px; }
+.h5 { margin-bottom:15px;}
+.renewal-table .output-generate-table { height:25vh;}
+.nav-pills > li + li { margin-left:0;}
+.tabpanel { margin-top: 10px; }
+.tab-content-section { height: 41.7vh; overflow-y: auto;}
+.tab-table { height:18vh; overflow-y:auto; margin-bottom:10px;}
+.tab-table-claim { height:35vh; overflow-y:auto; margin-bottom:10px;}
+.listBox { height: 25vh !important; }
+.listBox option { padding-bottom:8px;}
+.tab-nav-separation{border-bottom:1px solid #ebebeb;}
+.table > caption + thead > tr:first-child > th,  .table > colgroup + thead > tr:first-child > th,  .table > thead:first-child > tr:first-child > th,  .table > caption + thead > tr:first-child > td,  .table > colgroup + thead > tr:first-child > td,  .table > thead:first-child > tr:first-child > td { vertical-align:top; font-size:14px; background:#428bca; color:#ffffff;}
+td {cursor:pointer;}
+.table tr > th{font-weight:100;}  
+.form-horizontal .radio, .form-horizontal .checkbox, .form-horizontal .radio-inline, .form-horizontal .checkbox-inline{padding-top:0; top: 0px; left: 0px;} 
+.radio-inline { width: 100%;}
+
+/* For appearance */
+td.err { background-color: #e992b9; color: #fff; font-size: 0.75em; text-align: center; line-height: 1;}
+th { font-weight: 100;}
+tbody tr:nth-child(2n-1) {transition: all .05s ease-in-out; }
+/* For appearance */
+
+.sticky-wrap { overflow-x: auto; overflow-y: hidden; position: relative; width: 100%;}
+.sticky-wrap .sticky-thead, .sticky-wrap .sticky-col, .sticky-wrap .sticky-intersect { opacity: 0; position: absolute; top: 0; left: 0; transition: all .05s ease-in-out; z-index: 50; width: auto; background:#fff; }
+.sticky-wrap .sticky-thead { z-index: 100; width: 100%;}
+.sticky-wrap .sticky-intersect {opacity: 0 !important; z-index: 150;}
+.sticky-wrap td, .sticky-wrap th {box-sizing: border-box;}
+
+/* Not needed for sticky header/column functionality */
+.sticky-wrap.overflow-y { overflow-y: auto; height:100%;}
+
+/*dashboard*/
+.navbar-ensure { background:#fff; border-bottom:1px solid #ebebeb; }
+.page-container { margin: 0; padding: 0; position: relative;}
+.limitcheck{overflow-y:scroll; margin-bottom:15px;}
+#CheckBoxList1 label{font:14px "Helvetica Neue",Helvetica,Arial,sans-serif; margin-left:10px;}
+.form-control.textarea-noborder {border:none; box-shadow:none; resize:none;}
+.bottom .form-control.textarea {resize:none;}
+.contractorallrisk .form-control.textarea {resize:none;}
+
+/*added css for footer botton */
+.button-footer div { display: inline-block;}
+a:focus{outline:none !important; text-decoration:none !important;}
+
+/* PopUp */
+#divBackground { background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5) !important;}
+.PopupHeader h4 {margin-top: 0;}
+
+/* Treeview */
+.treeview { border: 1px solid #ccc; overflow-y: scroll;}
+.reset, .reset label, .reset input{margin:0px;}
+
+/* kisan css starts */
+/*--policysearch--*/
+.policy-search {clear: both; margin: 0 auto; padding: 10px 0;width: 75%; overflow: hidden; height: 380px; overflow-y:auto;}
+.policy-search .form-col {float:left; width:230px;}
+.polser {float: right !important; margin-right: 190px;}
+.form-col-md {width: 120px !important; float: left;}
+.polsel {width:55%;height: 32px;}
+.select-xxl.polsel1 {width:78%;}
+.form-row.nepali {margin-left: 119px;}
+.listbox.clientlist {width: 264px;}
+.clear {clear:both;}
+.tableft {float:left; width:40%;}
+.tableft .datetext {width: 71px;}
+.tabright {float:left; width:40%;}
+.tabright .code {width:43px;}
+.pol-btn {width:75%; margin:0 auto 75px;}
+.pol-btn .btn-col {float:left !important;}
+.clieninfotext {width:62%;}
+.polser-table {width:75%; margin:0 auto; margin-top:20px; overflow:hidden;overflow-x: auto;}
+.polser-table .table-content.cR-table {width: auto;}
+
+
+/*--claimRI--*/
+.claimRI {margin: 0 auto; overflow: hidden; padding: 10px 0 30px; width: 75%;}
+.form-row .label {color:Black; font-size:15px;}
+.form-group .collabel {color:Orange !important;}
+.form-claimRI {float: left; width: 40%;}
+.claim-RI-btn .btn-col {float:none;}
+.claim-RI-btn .btn-col input {display: inline-block;float: left; width: 80px;margin-bottom: 6px;}
+.claim-RI-btn .btn-col {float: left; width: 81px;}
+.form-row.cliamRI-yr .form-col-md {float:left;}
+.cliamRI-yr-left {float: left;width: 47%;}
+.form-row.claimRI-table {width:100%; overflow:hidden;}
+.form-row.claimRI-table .form-col-1 {float:left; width:30%}
+.form-row.claimRI-table .form-col-2 {float:left; width:10%;}
+.form-row.claimRI-table .form-col-3 {float:left; width:20%;}
+.form-col-2 .form-row > input {width: 80%; height:12px;}
+.form-col-3 .form-row > input {width: 80%; height:12px;}
+.form-col-1 .form-row {margin-bottom: 17px;}
+.btn-col.claimRI {margin-right: 73px;}
+
+/* approve_surve-fee -restructure */ 
+.approve_surve-fee { width:80%; padding: 20px 0; float:left; margin-left:10%;}
+.left_app-surve {width: 29%; float:left; padding: 10px;}
+.approve_surve-fee .app-label {width: 130px; float:left;}
+.approve_surve-fee .drop-dowm {width: 168px; float:left;}
+.claimadp-text2 {width: 113px;}
+.approve_surve-fee .drop-dowm2 {width: 160px; float:left;}
+.approve_surve-fee .drop-down1 {width: 105px; margin:0 16px;}
+.approve_surve-fee .btn-col {margin-right:15px;}
+.approve_surve-fee .app-listbox {min-height: 200px; width:98%;}
+.approve_surve-fee .app-index {margin-top: 10px; float:left;}
+.approve_surve-fee .index-list {border:1px dashed #000000; border-radius: 5px; padding:10px; min-height: 75px; text-align:center; font-weight:bold;}
+.right_app-surve {width:60%; float:left;}
+.right_app-surve .rt-app-top, .right_app-surve .rt-app-mid, .right_app-surve .rt-app-bottom {width:100%; border-bottom:1px solid #cccccc; overflow:hidden; margin-bottom: 20px;}
+.right_app-surve .rt-app-bottom {border-bottom:none;}
+.approve_surve-fee .drop-dowm3 {width: 300px; float:left;}
+.approve_surve-fee .mid-sub-left, .approve_surve-fee .mid-sub-right {width: 50%; float:left;}
+.approve_surve-fee .app-label1 {width:165px; float:left;}
+.approve_surve-fee .app-label2 {width:165px; float:left; margin-left: 20px;}
+.approve_surve-fee .drop-dowm6 {width:293px; float:left;}
+.approve_surve-fee .drop-dowm5 {width:75%!important;  min-height:100px;}
+.approve_surve-fee .down-butt {margin-right:35px;}
+         
+/*surv-fee-settle*/         
+.surv-fee-txt {width: 50px; margin-left: -32px; float: left;}
+.form-row.surv-form {width:150%}
+.surv-fee-txt1 {float: left; margin-left: 5px;}
+.rt-app-bottom .label {color:Black; font-size:14px; font-weight:bold;}
+.left_app-surve .app-label3 {float: left;width: 130px;}
+.left_app-surve .drop-down {width:168px; float:left;}
+
+/*RI-share*/
+
+.RI-share .table-content {overflow-y:auto;}
+.RI-share-col {float:left; width:32.5%;}
+.RI-share-col1 {float: left; width: 31.5%; margin-left: 20px;}
+.RI-share-col .form-col-md {width:50% !important; float:left !important;}
+.RI-share-col .form-col-md select {width:100% !important; float:right;}
+
+/*--sum-insured-limit--*/
+
+.sum-insured-limit .suminl-col {width:16%; float:left;}
+.btn-col.suminbtn {float: left !important; margin-top: 18px;}
+.sum-insured-limit .table-content {overflow-y:auto;}
+.sum-insured-limit .label {color:Red;}
+
+/*--Pool-share--*/
+
+.pool-share .pool-list {width:100%; height:300px; overflow:scroll;}
+.form-pool-col {width:30%; float:left;}
+.form-pool-col .form-col-md {width:50% !important; float:left !important;}
+.form-pool-col.pool2 {margin-left:20px;}
+.pool-share .form-col {float: left; width: 100px;}
+.pool-input {width:135px;}
+.form-pool-col.pool2 {height:150px; overflow-y:auto;}
+.form-pool-col.pool2 .btn-col {margin-right:29px; margin-top:10px;}
+
+/*--risk-prof-setup--*/
+
+.RPS-1 {float: left; margin-right: 20px; width: 47%;}
+.RPS-1 .form-col-md {width:50% !important;}
+.RPS-1 .form-col-md > input {width: 216px;}
+.risk-prof-setup .btn-col {float:left !important;}
+.risk-prof-setup .table-content {overflow-y:auto;}
+
+/*--additional-info--*/
+.addinfo {width:70%; padding:10px 0 20px; overflow:hidden; margin:0 auto;}
+.addinfo1 {float:left; width:30%;}
+.addinfo select {width: 100%;height: 280px;}
+.addinfo2 {float:left; width:65%; margin-left:20px;}
+.addlist {float: left; width: 80%; margin-left: 24px;}
+.addlabel {float: left; width: 100px;}  
+.addinfo2 select {height:100px !important;}
+.btn-col.addbtn {float: left !important;}
+.btn-col.addbtn2 {float: right !important; margin-left: 27px;}
+
+/*--RI-facultative--*/
+.facultative {margin:0 auto; padding:10px 0px; width:75%;}
+.facultative .form-col {width:30%; float:left;}
+.facultative .form-col2 {width:65%; float:left;}
+.facultative1 {float:left; width:30%}
+.facultative2 {float:left; width:65%; margin-left: 45px;}
+.form-col2 > input {width: 193px;}
+.facultative .facul-txt {width:30%; float:left;}
+.facultative .facul-txt1 {width:60%; float:left; margin-left:4px;}
+.facultative .form-row > select {width: 200px; margin-left: 20px;}
+.memo-txt {margin-left: 10px; width: 195px;}
+
+/*--REG-RI--*/
+.REG-RI {width:30%; margin:0 auto; padding:10px 0px;}
+.reg-btn {width: 70px; float: right; margin-top:-20px}
+.sub-btn.reg-bt {margin-bottom: 2px;  width: 70px;}
+.REG-RI-input {width: 98%; margin-top: 30px;}
+
+/*--inward--*/
+/*.inward {margin:0 auto; padding:10px 0px; width:75%;}*/
+
+.col-tab span {float: left; width: 120px;}
+.col-tab-btn span {float: left; width: 120px;}
+.col-tab {float: left; width: 33%;}
+.col-tab-text {width: 50px;}
+.form-row.col-tab-btn > select {width: 55%;}
+.col-tab-btn .list {margin-right: 16px; width: 269px !important;}
+.coverwise1 {float:left; width:30%;}
+.coverwise1 > select {width:100%; height:250px;}
+.form-row.inward-tab {margin-bottom: 490px;}
+
+.coverwise2 {float:left; width:65%; margin-left:15px;}
+.coverwise2 .form-col {width:45% !important; float:left;}
+.coverwise2 span {width: 130px; float: left;}
+.coverwise2 .cov-txt {width:453px;}
+
+#tab-content3 span {width:120px; float:left;}
+.tab3-ins-txt {width:260px; height:100px;}
+#tab-content4 .btn-col {float:left !important;}
+#tab-content4 .table-content {margin-top:10px; overflow-y:auto; width:700px;}                 
+
+/*--Claimaccsettlement--*/
+.claim_acc_rgt .label {color:Red; font-size:inherit; padding:0px; margin:0px;}
+.claim_acc_rgt .bottom {border:1px solid #cccccc; padding:10px 10px; overflow:hidden;}
+.claim_acc_left #ListBox1 {height:250px; overflow:scroll;}
+.claim_acc_rgt .CAStable {margin-top:10px; height:300px;}
+.bottom.col-md-8 .right-align {text-align:right}
+
+/*--ClaimMedical--*/
+.left-aside-claimMedical .btn.btn-primary {float: left; padding: 8px 4px;width: auto; margin-right: 4px;}
+.col-sm-5.abc {margin-left: 24px;}
+#tab-content2 .form-md-col.claimMed-col input {display:inline !important;}
+#tab-content2 .form-xs-col.claimMed-col input {display:inline !important; width:65px;}
+.right-aside-claimMedical .listbox1 {height:200px;}
+
+/*--chequebounceentry--*/
+.ChequeBent .btn {margin-right:5px;}
+
+/*----motortarrif----*/
+.leftmotor .listbox {height:400px;}
+
+/*--Users--*/
+.user .userbtn {margin-left:10px}
+
+/*motorpolicy*/
+.motorpol h4 { background: none repeat scroll 0 0 #125893; color: white; margin-bottom: 10px; margin-top: 25px; padding: 10px; text-transform: capitalize; width: 100%; }
+.motorpol .items {padding: 0px; width: 100%;}
+.item-group {clear: both; padding: 5px 0;}
+
+.surveyordeutation .top { border-bottom: 1px solid #cccccc; border-top: 1px solid #cccccc; margin-bottom: 15px; padding-top: 10px; width: 527px; }
+.surveyordeutation input.btn-add, input.btn-css { background: none repeat scroll 0 0 #e6e6e6; border: 1px solid #ccc; border-radius: 5px; cursor: pointer; font-size: 12px; padding: 5px 10px; width:385px;}
+.surveyordeutation .search-form, .output-generate-table { height: 25vh !important; overflow-y: auto; }
+.formatsetup .panel-heading { border-top-left-radius: 3px; border-top-right-radius: 3px; padding: 12px 13px 30px; }
+.formatsetup .panel-body {padding-left:50px;!important;}
+
+/* normal voucher entry */
+.normal-voucher-entry .out-border { border: 1px solid #eeeeee; padding-top: 10px; padding-bottom: 10px;}
+.normal-voucher-entry .height { min-height: 349px;}
+.normal-voucher-entry .t-height { min-height: 206px;}
+.normal-voucher-entry .textarea-height {min-height: 182px;}
+        
+/* premium-voucher */
+.premium-voucher-account .mar-top {margin-top:19px;}
+    
+/* tree view*/
+.avg-height { overflow:scroll; line-height:2.0em;} 
+.margin-btm { margin-bottom:20px;}
+.scroll-bar  {overflow:scroll;}
+    
+/* table search icon */
+.search-icon-label { display:block; font-weight:bold; font-size:14px; color:#ff0000;}
+.search-icon {padding:5px; width:34px;}
+.search-icon:hover { cursor:pointer; -moz-transform: scale(1.2); -webkit-transform: scale(1.2); -o-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); -webkit-transition: all 300ms ease; -moz-transition: all 300ms ease; -ms-transition: all 300ms ease; -o-transition: all 300ms ease; transition: all 300ms ease;}
+                             
+/*--table active style--*/                            
+.select_table { background-color:#62C1FC!important; color:#ffffff!important;} 
+.select_table th {color: #000;}
+       
+/* common for all */
+.form-group {margin-bottom: 5px!important;}
+.form-control { padding: 0 0 0 5px!important; font-size:12px!important; height: 20px!important;}
+.btn { font-size: 12px!important; padding: 5px!important;}
+.error { color: #ff0000!important;}
+.table > thead > tr > th, .table > tbody > tr > th,  .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td { padding: 4px!important;}
+
+/* new login form stars */
+.login-page {height:100vh; /*background: url(../img1/loginbg1.jpg) no-repeat center center;*/}
+.login-content { position:relative; top:26vh;}
+.login-icon, .login-icon1 { position:relative;}
+.log-icon1, .log-icon2 { position:absolute; right:25px; top:7px; color:#000000;}
+.login-content1 { background:#ffffff; border: 1px solid #eeeeee; border-radius: 10px; -webkit-box-shadow: 0 0 5px 0 #000000; box-shadow: 0 0 5px 0 #000000; color:#000000; }
+.login-content1 h3 { font-size:18px; background: #265CA8 none repeat scroll 0 0; border-radius: 10px 10px 0 0; margin-top: 0 !important; padding: 10px; color:#ffffff; text-transform:uppercase;}
+/*.login-mid { padding:50px 30px;}*/
+.login-mid {padding: 0 30px 30px;}
+.copyright1 img {opacity: 0.5;}
+.copyright1 img:hover { opacity: 1;}
+/* new login form ends */
+
+.m-btns {height:35px; width:80px; border:none; margin:5px;}
+.show-btn { background:url(../img1/all.png) no-repeat left top;}
+.show-btn:hover { background:url(../img1/claim.png) no-repeat left top;}
+.add-btn { background:url(../img1/add-btn.png) no-repeat center center;}
+.add-btn:hover { background:url(../img1/add-btn1.png) no-repeat center center;}
+.edit-btn {background:url(../img1/edit2-icon.png) no-repeat left top;}
+.edit-btn:hover {background:url(../img1/export.png) no-repeat left top;}
+/* image buttons ends */
+
+/* company profile */
+.pannel-accordian:hover { text-decoration:none; cursor:pointer;}
+        
+/* for border common */
+.border1 { border: 1px solid #eeeeee; border-radius: 5px; float: left; padding: 10px 0; width: 100%;}
+
+/* for blink effect */
+.blink { -webkit-animation-name: blinker; -webkit-animation-duration: 1s; -webkit-animation-timing-function: linear; -webkit-animation-iteration-count: infinite; -moz-animation-name: blinker; -moz-animation-duration: 1s; -moz-animation-timing-function: linear; -moz-animation-iteration-count: infinite; animation-name: blinker; animation-duration: 1s; animation-timing-function: linear; animation-iteration-count: infinite; }
+@-moz-keyframes blinker {  0% { opacity: 1.0; } 50% { opacity: 0.0; } 100% { opacity: 1.0; }}
+@-webkit-keyframes blinker {  0% { opacity: 1.0; } 50% { opacity: 0.0; } 100% { opacity: 1.0; }}
+@keyframes blinker { 0% { opacity: 1.0; } 50% { opacity: 0.0; } 100% { opacity: 1.0; }}
+
+/* for table next buttons */
+.btntable {display: inline-block; margin: 10px 2px; padding: 10px;}
+.btntable:hover { background:#f1f1f1;}
+.label-number { float: right; margin: 10px 20px; background: #f1f1f1; padding: 5px 20px; color:#000000;}
+.aspNetDisabled.btntable { cursor: not-allowed;}
+.aspNetDisabled.btntable:hover { background: none; color:#337ab7;}
+.toggleme { z-index: 1039!important;}
+
+/*for label added in h4 (issue policy)*/
+#ContentPlaceHolder1_lblClassName 
+{
+    font-size:11.5px;
+    font-weight:normal!important;
+    color:#f00;}
+
+.note
+{
+    font-size:11.5px;
+    font-weight:normal!important;
+    color:#f00;}

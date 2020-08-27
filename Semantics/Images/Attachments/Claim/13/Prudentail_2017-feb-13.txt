@@ -1,0 +1,47 @@
+create or replace PROCEDURE UW_GET_VatInvoicePrint
+( P_DOCUMENTNO IN VARCHAR2, 
+p_recordset OUT SYS_REFCURSOR 
+) 
+AS BEGIN  
+ OPEN p_recordset FOR  
+ SELECT count(documentno) as TotalPnt,documentno FROM tbl_vatbillprinthistory
+  WHERE documentno=P_DOCUMENTNO
+ group by documentno;
+END UW_GET_VatInvoicePrint; 
+
+create or replace PROCEDURE UW_INSERT_PRINTHISTORY ( 
+ P_DOCUMENTNO IN tbl_vatbillprinthistory.DOCUMENTNO% TYPE,
+  P_BRANCHCODE IN tbl_vatbillprinthistory.BRANCHCODE% TYPE,
+  P_PRINTDATE IN tbl_vatbillprinthistory.printdate% TYPE,  
+ 
+  P_USERID IN tbl_vatbillprinthistory.userid% TYPE,
+  P_COPIES IN tbl_vatbillprinthistory.copies% TYPE, 
+  P_VATINVNO IN tbl_vatbillprinthistory.vatinvno% TYPE
+) 
+IS
+BEGIN
+
+  INSERT INTO tbl_vatbillprinthistory( DOCUMENTNO, BRANCHCODE, printdate, userid, copies,vatinvno
+  )
+  VALUES(P_DOCUMENTNO,P_BRANCHCODE, P_PRINTDATE, P_USERID, P_COPIES,P_VATINVNO
+  );
+END; 
+
+
+create or replace PROCEDURE UW_GET_RECEIPTINFO 
+( P_DOCUMENTNO IN VARCHAR2, 
+p_recordset OUT SYS_REFCURSOR 
+) 
+AS BEGIN  
+ OPEN p_recordset FOR  
+ select a.collectiondt, a.colno, pd.chequeno, pd.chqdt, a.netpremium, a.stampduty, a.doctype, a.documentno, a.creditnote, a.policyno,
+ a.clientcode, a.ainsured, a.aninsured, a.ainsuredadd, a.aninsuredadd, c.eclientname, c.ECLIENTADDRESS,c.nclientname,c.nclientaddress, pd.cashamt, pd.chqamt, pd.depositamt,
+ pd.jvadjustamt, pd.inexpenseadj, pd.bankname, pd.excessamt, a.vatamt, a.fldoffcode, a.agentcode, pd.adjamt,
+ a.branchcode, a.tppremium, a.pan_no, a.effectivedt, a.expirydt, a.thirdpartyamt, a.suminsuredbalance,b.NNAME as branchname,nvl(pd.receipttime,to_char(sysdate,'HH12:MIAM') ) as receipttime  
+,PD.FVATINVNO,pd.vatinvno
+from docissue a
+ inner join paymentdetails pd on a.documentno = pd.documentno
+ inner join msclient c on a.clientcode = c.clientcode
+ inner join msbranch b on a.branchcode=b.branchcode
+ WHERE A.DOCUMENTNO = P_DOCUMENTNO;
+END uw_GET_RECEIPTINFO; 

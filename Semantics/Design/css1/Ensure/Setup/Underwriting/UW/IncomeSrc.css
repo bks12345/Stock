@@ -1,0 +1,14 @@
+﻿
+.customvalidatorcalloutstyle div, .customvalidatorcalloutstyle td { border: 1px solid #2670C9; background-color: #408AE3; }
+.customvalidatorcalloutstyle .ajax__validatorcallout_error_message_cell { font-family: Verdana; font-size: 11px; padding: 9px; border-right: medium none !important; border-left: medium none !important; width: 100%; color: white; font-weight: bold; }
+.customvalidatorcalloutstyle .ajax__validatorcallout_close_button_cell .ajax__validatorcallout_innerdiv { border: medium none !important; text-align: center; width: 12px; padding: 1px; cursor: pointer; opacity: 0.9; }
+.customvalidatorcalloutstyle .ajax__validatorcallout_icon_cell { width: 20px; padding: 2px; margin: 0px; border-right: medium none !important; }
+.customvalidatorcalloutstyle .ajax__validatorcallout_callout_cell { width: 20px; height: 100%; text-align: right; vertical-align: middle; border: medium none !important; background-color: transparent !important; padding: 0px; margin: 0px; }
+/* added css */
+.department { padding-top: 20px; }
+.department-leftmid .form-group { float: left; width: 100%; }
+.depart-label { float: left; }
+.depart-list { min-height: 200px; }
+.depart-text { float: right; width: 233px; }
+.error1, .error { color: #ff0000; }
+.btn-default div { display: inline-block; }

@@ -1,0 +1,61 @@
+﻿
+.selected { color: Red; }
+.black_overlayThis { display: none; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index: 1001; -moz-opacity: 0.8; opacity: .80; filter: alpha(opacity=80); }
+.block { border: 1px solid #67809F; width: 902px; height: 150px; overflow: scroll; margin-top: 10px; }
+.white_contentThis { width: 270px; border: 2px solid #BFCDDB; background-color: white; z-index: 1002; overflow: auto; border-radius: 5px; position: absolute !important; }
+#lightKyc .popupClose { color: black; float: right; font-size: 12px; font-weight: bold; margin-right: 5px; margin-top: 3px; width: 37px; }
+iframe { height: 100%; width: 100%; -moz-transition: 2s; }
+.PopupHeaderThis { height: 25px; background-color: #CCDAE7; width: 100%; }
+p { font-family: Arial; font-size: 24px; margin-left: 30px; position: absolute; margin-top: 5px; color: White; }
+.frm { width: 1000px; height: auto; border: 1px solid #67809F; margin-left: 15px; margin-top: 15px; position: absolute; padding: 0 15px; }
+.frmheader { width: 1000px; height: 40px; background-color: #67809F; margin: 0 -15px; }
+.left { float: left; margin-left: 10px; color: #000; width: 1000px; }
+.tab { width: 1000px; margin-left: 10px; visibility: visible; }
+.leftDiv { float: left; }
+.midDiv { float: left; }
+.topDiv { padding-bottom: 10px; }
+.secondChild li { display: table; float: none; padding: 5px; }
+.bottomChild { list-style: none; padding: 0px; margin-top: 6px; }
+.bottomChild li { display: table; float: none; padding-left: 5px; height: 20px; padding-bottom: 2px; }
+.lftBottomChild { list-style: none; padding: 0px; margin: 7px 0 0; }
+.lftBottomChild li { display: table; float: none; padding-left: 5px; height: 19px; padding-bottom: 2px; }
+.tabParent { list-style: none; padding: 0px; margin: 0px; }
+.tabParent li { display: table; }
+.tabFirstChild { list-style: none; padding: 6px; margin: 0px; }
+.tabFirstChild li { float: left; }
+.tabFirstChild .leftLi { width: 349px; }
+.orglftsecondChild { list-style: none; padding: 0px; margin: 0px; }
+.orglftsecondChild li { display: table; float: none; height: 20px; padding: 8px 7px 7px 27px; }
+.btnrpt { margin-top: 80px; } 
+.pnlRpt { border: 1px solid #67809F; overflow: scroll; height: 253px; width: 374px; }
+.rptTable, .rptHeader { font-weight: normal; background-color: #67809F; border: 1px solid #FFFFFF; border-collapse: collapse; color: #FFFFFF; font-family: Arial; font-size: 12px; margin-bottom: 20px; padding: 5px; }
+.rptRow { background-color: #EDEDED; border: 1px solid #FFFFFF; border-collapse: collapse; color: #000000; padding-left: 15px; }
+.rptRow2 { background-color: #FFF; border: 1px solid #FFFFFF; border-collapse: collapse; color: #000000; padding-left: 15px; }
+.vwTitle { font-weight: bold; color: #67809F; font-size: large; }
+.dataTables_scrollBody { height: 10vh !important; border-collapse: collapse; }
+.dataTables_scroll, .dataTables_scrollHeadInner, .dataTables_scrollHeadInner > table, .dataTables_scrollBody, .dataTables_scrollBody > table { width: 100% !important; }
+body { font-family: Arial; font-size: 10pt; }
+.modalBackground { background-color: Black; filter: alpha(opacity=40); opacity: 0.4; }
+.modalPopup { background-color: #FFFFFF; width: 300px; border: 3px solid #0DA9D0; }
+.modalPopup .header { background-color: #2FBDF1; height: 30px; color: White; line-height: 30px; text-align: center; font-weight: bold; }
+.modalPopup .body { min-height: 50px; line-height: 30px; text-align: center; font-weight: bold; }
+.modalPopup .footer { padding: 3px; }
+.modalPopup .yes, .modalPopup .no { height: 23px; color: White; line-height: 23px; text-align: center; font-weight: bold; cursor: pointer; }
+.modalPopup .yes { background-color: #2FBDF1; border: 1px solid #0DA9D0; }
+.modalPopup .no { background-color: #9F9F9F; border: 1px solid #5C5C5C; }
+.dataTable td { white-space: nowrap; }
+.toggleme1 { width: 99.9% !important; }
+.tab-pane {padding-top: 10px;}
+/*#rpt2_wrapper .dataTables_scrollBody, #rpt3_wrapper .dataTables_scrollBody  {height: 30vh!important; }
+ #rpt4_wrapper .dataTables_scrollBody {height: 12vh!important; }
+.dataTables_scrollBody1 {width:102%!important;}*/
+.table-design{height:50vh;}
+.fixed-container {height: 93% !important;}
+.right_bank {
+  text-align: right;
+}
+@media (max-width:800px) { .margintop { margin-top: 5px !important; } 
+.right_bank {
+  text-align: left;
+} }
+@media (max-width:768px ) { .search-form {height:auto!important;}  .cont-pad-top { padding-top: 2px; } } 

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tableName>
+  <tables>
+    <id>0</id>
+    <name>None</name>
+    <checked>false</checked>
+  </tables>
+  <tables>
+    <id>1</id>
+    <name>Branch</name>
+    <checked>false</checked>
+  </tables>
+  <tables>
+    <id>2</id>
+    <name>Company</name>
+    <checked>false</checked>
+  </tables>
+  <tables>
+    <id>3</id>
+    <name>InsuredType</name>
+    <checked>false</checked>
+  </tables>
+  <tables>
+    <id>4</id>
+    <name>Running No.</name>
+    <checked>true</checked>
+  </tables>
+</tableName>

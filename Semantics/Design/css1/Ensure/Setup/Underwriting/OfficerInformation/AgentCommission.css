@@ -1,0 +1,20 @@
+﻿
+.error, .error1 { color: Red; }
+.customvalidatorcalloutstyle div, .customvalidatorcalloutstyle td { border: 1px solid #2670C9; background-color: #408AE3; }
+.customvalidatorcalloutstyle .ajax__validatorcallout_error_message_cell { font-family: Verdana; font-size: 11px; padding: 9px; border-right: medium none !important; border-left: medium none !important; width: 100%; color: white; font-weight: bold; }
+.customvalidatorcalloutstyle .ajax__validatorcallout_close_button_cell .ajax__validatorcallout_innerdiv { border: medium none !important; text-align: center; width: 12px; padding: 1px; cursor: pointer; opacity: 0.9; }
+.customvalidatorcalloutstyle .ajax__validatorcallout_icon_cell { width: 20px; padding: 2px; margin: 0px; border-right: medium none !important; }
+.customvalidatorcalloutstyle .ajax__validatorcallout_callout_cell { width: 20px; height: 100%; text-align: right; vertical-align: middle; border: medium none !important; background-color: transparent !important; padding: 0px; margin: 0px; }
+/* added css */
+.agent-commi { width: 675px; height: auto; margin-left: 40px; margin-top: 40px; }
+.agent-commi-left { float: left; margin-top: 45px; margin-bottom: 15px; width: 30%; }
+.agent-commi-mid { float: left; margin: 60px 0 0 20px; width: 40%; }
+.agent-commi-btn { float: right; margin-right: 32px; margin-top: 45px; }
+.agent-commi-list, .agent-commi-liscon { list-style: none; }
+.agent-commi-liscon li { padding-top: 10px; }
+.agent-commi-lisblock { background-color: #559edb; overflow: hidden; padding-bottom: 5px; padding-top: 5px; text-align: center; width: 200px; }
+.agent-commi-label { font-family: Arial; font-size: 14px; color: #000; }
+.agent-commi-label1 { color: White; font-family: Open Sans; font-size: 14px; }
+.agent-commi-drop { width: 200px; border: #666666 solid 1px; }
+.agent-commi-listbox { height: 130px; width: 200px; }
+.agent-commi-txt { width: 90px; }

@@ -1,0 +1,9 @@
+﻿
+/*.dataTables_scrollBody { height: 30vh !important;}
+.dataTables_scrollBody1 { width: 1023% !important;}*/
+.table-design{height:30vh;}
+.search-form { height: 83vh !important;}
+.ModalPopupBG { background-color: black; filter: alpha(opacity=50) !important; opacity: 0.7; border: 2px solid black; top: 0px !important; left: 0px !important; position: absolute !important; z-index: 101 !important; background-position: top; }
+.white_con { width: 402px; border: 2px solid #BFCDDB; background-color: white; z-index: 1002; overflow: auto; border-radius: 5px; position: absolute !important; }
+.PopupHeader { height: 25px; background-color: #CCDAE7; width: 392px; padding-left: 10px;}
+ 

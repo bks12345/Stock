@@ -1,0 +1,61 @@
+﻿
+.ModalPopupBG2 { background-color: black; filter: alpha(opacity=50) !important; opacity: 0.7; border: 2px solid black; top: 0px !important; left: 0px !important; position: absolute !important; z-index: 101 !important; background-position: top; }
+#light img { float: right; width: 20px; }
+#light > iframe { height: 100%; width: 100%; -moz-transition: 2s; }
+.white_content2 { width: 960px; border: 2px solid #BFCDDB; background-color: white; z-index: 1002; overflow: auto; border-radius: 5px; position: absolute !important; }
+.PopupHeader2 { height: 25px; background-color: #CCDAE7; width: 960px; }
+p { font-family: Arial; font-size: 24px; margin-left: 30px; position: absolute; margin-top: 5px; color: White; }
+.frm { width: 850px; height: auto; border: 1px solid #67809F; margin-left: 15px; margin-top: 15px; position: absolute; padding: 0 15px; }
+.frmheader { width: 880px; height: 40px; background-color: #67809F; margin: 0 -15px; }        
+.tab { width: 850px; margin-top: 12px; }
+.left { float: left; margin-left: 10px; color: #000; }
+.parent { list-style: none; padding: 0px; margin: 0px; }
+.parent li { display: table; }
+.firstChild { list-style: none; padding: 6px; margin: 0px; }
+.firstChild li { float: left; }
+.firstChild .leftLi { width: 113px; }
+.firstChild .rightLi { margin-right: 10px; }
+.firstChild .leftLiArea { width: 74px; }
+.lftsecondChild { list-style: none; padding: 0px; margin: 0px; }
+.lftsecondChild li { display: table; float: none; padding: 3px; height: 22px; }
+.secondChild { list-style: none; padding: 0px; margin: 0px; }
+.secondChild li { display: table; float: none; padding: 5px; }
+.bottomChild { list-style: none; padding: 0px; margin-top: 6px; }
+.bottomChild li { display: table; float: none; padding-left: 5px; height: 20px; padding-bottom: 2px; }
+.lftBottomChild { list-style: none; padding: 0px; margin: 7px 0 0; }
+.lftBottomChild li { display: table; float: none; padding-left: 5px; height: 19px; padding-bottom: 2px; }
+.code { width: 205px; }
+.txt { width: 284px; }
+.tabTxt { width: 245px; }
+.btxt { width: 295px; }
+select { height: 22px; width: 290px; }
+.block { border: 1px solid #67809F; width: 848px; height: 150px; overflow: scroll; margin-top: 10px; }
+.pnlRpt { border: 1px solid #67809F; margin-bottom: 15px; }
+.rptTable, .rptHeader { font-weight: normal; background-color: #67809F; border: 1px solid #FFFFFF; border-collapse: collapse; color: #FFFFFF; font-family: Arial; font-size: 12px; margin-bottom: 20px; padding: 5px; }
+.rptRow { background-color: #EDEDED; border: 1px solid #FFFFFF; border-collapse: collapse; color: #000000; padding-left: 15px; }
+.rptRow2 { background-color: #FFF; border: 1px solid #FFFFFF; border-collapse: collapse; color: #000000; padding-left: 15px; }
+.lis { list-style: none; }
+.lis li { overflow: hidden; }
+.lft { float: left; width: 325px; }
+.rgt { float: right; width: 390px; }
+.m { float: left; margin-top: -5px; margin-top: -1px; margin-left: -30px; }
+.rgt1 { float: left; width: 140px; margin-top: 8px; margin-left: -15px; }
+.txtt { float: right; margin-right: 90px; }
+.txt1 { float: right; margin-right: 35px; width: 180px; }
+.drp { float: right;  margin-right: 35px; width: 185px; }
+.drp1 { float: right; width: 185px; margin-right: 25px; }
+.drp3 { width: 100px; }        
+.bt { float: right; margin-top: 10px; margin-bottom: 10px; }
+.bottomtable { float: left; margin-top: -10px; width: 425px; height: auto;  margin-left: 39px; margin-bottom: 30px; border: 1px solid; border-color: #60A6DE; }
+/*#modal-custom { width: 1170px !important; }*/
+#modal-custom { width: 80%!important; }
+#IframeEdit { width: 100% !important; }
+.dataTables_scroll, .dataTables_scrollHeadInner, .dataTables_scrollHeadInner > table, .dataTables_scrollBody, .dataTables_scrollBody > table { width: 100% !important; }
+/*.dataTables_scrollBody {height: 59vh !important; }
+.dataTables_scrollBody1 { width: 102.4% !important;}*/
+.table-design{height:59vh;}
+.top { text-align: center; background: #428bca; color: #ffffff; border-right: 1px solid #ffffff; border-bottom: 1px solid #ffffff !important; }
+.toggleme1 { width: 99.9% !important; }
+@media (max-width: 768px) { .toggleme{left:0!important; top:4.6%!important; width:100%!important;} .kyc-marg{margin-top:25px;} .search-output, .search-form{height:auto!important;} }        
+#ContentPlaceHolder1_rblMnuVdc td {display: inline-block;margin: -2px 10px;}
+input[type="radio"]{  margin-right: 5px!important;}
