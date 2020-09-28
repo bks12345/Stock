@@ -22,6 +22,7 @@
     <link href="Design/css1/layout.css" rel="stylesheet" type="text/css" />
     <link id="lnkNepaliFont" href="Design/css1/Fontasy.css" runat="server" rel="stylesheet" />
     <link href="Design/css1/responsive-media-query.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -79,8 +80,8 @@
         <asp:ScriptManager ID="ToolkitScriptManager1" runat="server">
         </asp:ScriptManager>
         <nav class="navbar navbar-fixed-top navbar-ensure" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
+            <div class="container-fluid header-part">
+                <div class="navbar-header ">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -105,67 +106,14 @@
                     <ul class="nav navbar-nav navbar-right nav-pills">
 
 
-                        <li>
-                            <div class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    <img src="Design/img1/hash-icon.png" class="google_icon" />
-                                </a>
-                                <div class="dropdown-menu shortcut-drop " aria-labelledby="dLabel">
-                                    <ul class="shortcut-drop-inner ">
-                                        <li><a id="a162" runat="server" class="shortcuts shortcuts1 mp-ref" href="Ensure/Process/UnderwritingEX/frmWizA.aspx"
-                                            target="target" title="Issue Policy"><span class="description">Policy Issue</span></a></li>
-                                        <li><a id="a177" runat="server" class="shortcuts shortcuts6 mp-ref" href="Ensure/SearchEngine/DebitSearchEngine.aspx" target="target"
-                                            title="Proforma search"><span class="description">Proforma Search</span></a></li>
-                                        <li><a id="a172" runat="server" class="shortcuts shortcuts3 mp-ref" href="Ensure/SearchEngine/NewPolicySearch.aspx"
-                                            target="target" title="Policy Search"><span class="description">Policy Search</span></a></li>
-                                        <li><a id="a167" runat="server" class="shortcuts shortcuts2 mp-ref" href="Ensure/Process/Collection/NewCollection.aspx"
-                                            target="target" title="Premium Collection"><span class="description">Collection</span></a></li>
-                                        <li><a id="a182" runat="server" class="shortcuts shortcuts5 mp-ref" href="Ensure/SearchEngine/collectionsearch.aspx"
-                                            target="target" title="Collection Search"><span class="description">Collection Search</span></a></li>
-                                        <li><a id="a176" runat="server" class="shortcuts shortcuts7 mp-ref" href="Ensure/Setup/Underwriting/UW/PremiumCalculator.aspx"
-                                            target="target" title="Premium Calculator"><span class="description">Premium Calculator</span></a></li>
-                                        <li><a id="a239" runat="server" class="shortcuts shortcuts4 mp-ref" href="Ensure/Process/Claim/AddClaim.aspx"
-                                            target="target" title="Claim Registration"><span class="description">Claim Registration</span></a></li>
-                                        <li><a id="a244" runat="server" class="shortcuts shortcuts8 mp-ref" href="Ensure/SearchEngine/ClaimSearch.aspx"
-                                            target="target" title="Claim Search"><span class="description">Claim Search</span></a></li>
-                                        <li><a id="a263" runat="server" class="shortcuts shortcuts9 mp-ref" href="Ensure/Process/Claim/ClaimAssignment.aspx"
-                                            target="target" title="Claim Assignment"><span class="description">Claim Assignment</span></a></li>
-                                        <li><a id="a293" runat="server" class="shortcuts shortcuts10 mp-ref" href="Ensure/Process/Account/voucher-listing.aspx"
-                                            target="target" title="Voucher Listing"><span class="description">Voucher Listing</span></a></li>
-                                        <li><a id="a294" runat="server" class="shortcuts shortcuts11 mp-ref" href="Ensure/Process/Account/ledger-report.aspx"
-                                            target="target" title="Ledger Report"><span class="description">Ledger Report</span></a></li>
-                                        <li><a id="a295" runat="server" class="shortcuts shortcuts12 mp-ref" href="Ensure/Process/Account/trial-balance.aspx"
-                                            target="target" title="Trial Balance"><span class="description">Trial Balance</span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="news_notification">
-                            <%-- <a href="#" class="insu-icon hvr-buzz">--%>
-                            <a href="#" class="insu-icon bell-icon">
-                                <img alt="dashboard" src="Design/img1/bell1.png" title="Dashboard" class="notification-icon open-notification" />
-                            </a>
-                            <asp:UpdatePanel ID="UpdatePanel6" runat="server">
-                                <ContentTemplate>
-                                    <a href="#" class="badge top-notification top-notification2 open-notification1">
-                                        <asp:Label ID="lblNotificationCnt" runat="server" Text="0"></asp:Label>
-                                    </a>
-                                  <%--  <asp:Button ID="btnhidden" runat="server" OnClick="btnhidden_OnClick" Style="display: none" TabIndex="58" />--%>
-                                </ContentTemplate>
-                            </asp:UpdatePanel>
+                        
+                       
 
-                        </li>
-
-                        <li>
-
-                            <a href="StockFront.aspx">
-                                <img alt="dashboard" src="Design/img1/dashboard.png" title="Home"></a>
-
-                        </li>
+                        
 
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                <asp:Image ID="imgUser" class="user-icon" runat="server" Height="35px" Width="35px"></asp:Image>
+                                <%--<asp:Image ID="imgUser" class="user-icon" runat="server" Height="35px" Width="35px"></asp:Image>--%>
                                 <%--<span class="user-icon"></span><asp:Label ID="lblUser" runat="server"></asp:Label>--%>
                             </a>
                             <ul class="dropdown-menu account-drop" role="menu">
@@ -210,7 +158,7 @@
 
         <i id="right-navigator" class="right-info-navigator lft-arrow rft-arrow" title="Menu Toggle"></i>
 
-        <i id="right-arrow" class="right-info-navigator arrow-right-bar"></i>
+        <%--<i id="right-arrow" class="right-info-navigator arrow-right-bar"></i>--%>
 
         <div class="page-container">
             <div class="page-sidebar navbar-collapse sidebar collapsable sidebar12">

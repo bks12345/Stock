@@ -352,3 +352,7 @@ a:focus{outline:none !important; text-decoration:none !important;}
     font-size:11.5px;
     font-weight:normal!important;
     color:#f00;}
+
+.header-part{
+    background-color:aliceblue;
+}

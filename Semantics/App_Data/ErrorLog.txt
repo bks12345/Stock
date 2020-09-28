@@ -587,3 +587,187 @@ Inner Stack Trace:
    at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
    at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
    at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/25/2020 12:11:18 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/25/2020 12:11:19 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/25/2020 12:11:19 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/25/2020 12:11:20 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/25/2020 12:11:20 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/25/2020 12:11:21 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/25/2020 12:11:22 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/25/2020 12:11:23 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/25/2020 12:11:23 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/25/2020 12:11:24 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/25/2020 12:14:24 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/25/2020 12:47:11 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/25/2020 12:47:12 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/25/2020 12:47:12 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/25/2020 12:47:13 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/25/2020 12:47:13 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/28/2020 1:06:08 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/28/2020 1:06:09 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/28/2020 1:06:09 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/28/2020 1:08:17 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/28/2020 1:08:17 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/28/2020 1:11:36 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 208
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+********** 9/28/2020 1:14:53 PM **********
+Inner Exception: Object reference not set to an instance of an object.
+Inner Stack Trace: 
+   at Stock.StockFront.Page_Load(Object sender, EventArgs e) in d:\project\MyStock\Semantics\StockFront.aspx.cs:line 182
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

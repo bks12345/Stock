@@ -205,7 +205,7 @@ namespace Stock
                     //-------------------------------------------------------------------------
 
                     fxEncodedUserId();
-                    lblNotificationCnt.Text = hdnNotificationNo.Value.ToString();
+                    //lblNotificationCnt.Text = hdnNotificationNo.Value.ToString();
 
 
 
